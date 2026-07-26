@@ -216,13 +216,13 @@
   document.getElementById('report-container').innerHTML = `
     <div class="report-card">
       <div class="report-meta">
-        <span class="tag mono">${latest.tag}</span>
+        <span class="tag mono">${escapeHtml(latest.tag)}</span>
         <span class="mono">${formatDate(latest.date)}</span>
       </div>
-      <h3>${latest.title}</h3>
-      <p>${latest.excerpt}</p>
+      <h3>${escapeHtml(latest.title)}</h3>
+      <p>${escapeHtml(latest.excerpt)}</p>
       <div class="report-assets">
-        ${latest.assets.map(a => `<span class="asset-chip"><span class="dot"></span>${a}</span>`).join("")}
+        ${latest.assets.map(a => `<span class="asset-chip"><span class="dot"></span>${escapeHtml(a)}</span>`).join("")}
       </div>
     </div>
   `;

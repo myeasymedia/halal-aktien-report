@@ -29,6 +29,18 @@ function renderSparkline(values, { color = "#2dd4a7", width = 240, height = 40 }
   `;
 }
 
+/** Escaped HTML-Sonderzeichen -- Pflicht für jeden Text, der aus externen
+ *  Quellen stammt (News-Feeds/Bot), bevor er per innerHTML eingefügt wird. */
+function escapeHtml(str) {
+  if (str === null || str === undefined) return "";
+  return String(str)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
 /** Formatiert ein Datum (YYYY-MM-DD) als lesbares deutsches Datum. */
 function formatDate(iso) {
   const d = new Date(iso + "T00:00:00");
@@ -47,8 +59,8 @@ function companyCardHTML(c, basePath = "pages/") {
     <a class="company-card" href="${basePath}unternehmen-detail.html?ticker=${encodeURIComponent(c.ticker)}">
       <div class="company-top">
         <div>
-          <div class="company-ticker mono">${c.ticker}</div>
-          <div class="company-name">${c.name}</div>
+          <div class="company-ticker mono">${escapeHtml(c.ticker)}</div>
+          <div class="company-name">${escapeHtml(c.name)}</div>
         </div>
         <span class="halal-badge">✓ Halal-Screen</span>
       </div>
@@ -62,9 +74,9 @@ function companyCardHTML(c, basePath = "pages/") {
 function blogCardHTML(post, { featured = false, basePath = "pages/" } = {}) {
   return `
     <a class="blog-card ${featured ? "featured" : ""}" href="${basePath}blog-post.html?slug=${encodeURIComponent(post.slug)}">
-      <div class="blog-date mono">${formatDate(post.date)} · ${post.tag}</div>
-      <h4>${post.title}</h4>
-      ${featured ? `<p class="blog-excerpt">${post.excerpt}</p>` : ""}
+      <div class="blog-date mono">${formatDate(post.date)} · ${escapeHtml(post.tag)}</div>
+      <h4>${escapeHtml(post.title)}</h4>
+      ${featured ? `<p class="blog-excerpt">${escapeHtml(post.excerpt)}</p>` : ""}
     </a>
   `;
 }
@@ -75,19 +87,21 @@ function blogListItemHTML(post, basePath = "") {
     <a class="blog-list-item" href="${basePath}blog-post.html?slug=${encodeURIComponent(post.slug)}">
       <div class="blog-list-meta mono">${formatDate(post.date)}</div>
       <div class="blog-list-body">
-        <span class="tag mono">${post.tag}</span>
-        <h4>${post.title}</h4>
-        <p class="blog-excerpt">${post.excerpt}</p>
+        <span class="tag mono">${escapeHtml(post.tag)}</span>
+        <h4>${escapeHtml(post.title)}</h4>
+        <p class="blog-excerpt">${escapeHtml(post.excerpt)}</p>
       </div>
       <div class="blog-list-arrow">→</div>
     </a>
   `;
 }
 
-/** Wandelt den mit \n\n getrennten Fließtext eines Beitrags in <p>-Absätze um. */
+/** Wandelt den mit \n\n getrennten Fließtext eines Beitrags in <p>-Absätze um.
+ *  Escaped den Text zuerst (externe Quelle!) und wandelt \n innerhalb eines
+ *  Absatzes in <br> um, damit einzeilige Absätze (z.B. "🎯 Fokus: ...") erhalten bleiben. */
 function renderBodyParagraphs(body) {
   return body
     .split("\n\n")
-    .map((para) => `<p>${para}</p>`)
+    .map((para) => `<p>${escapeHtml(para).replaceAll("\n", "<br>")}</p>`)
     .join("");
 }

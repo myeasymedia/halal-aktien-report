@@ -121,12 +121,12 @@
     articleEl.innerHTML = `
       <a class="back-link" href="blog.html">← Zurück zum Archiv</a>
       <div class="post-meta-row">
-        <span class="tag mono">${post.tag}</span>
+        <span class="tag mono">${escapeHtml(post.tag)}</span>
         <span class="mono">${formatDate(post.date)}</span>
       </div>
-      <h1>${post.title}</h1>
+      <h1>${escapeHtml(post.title)}</h1>
       <div class="post-assets">
-        ${post.assets.map(a => `<span class="asset-chip"><span class="dot"></span>${a}</span>`).join("")}
+        ${post.assets.map(a => `<span class="asset-chip"><span class="dot"></span>${escapeHtml(a)}</span>`).join("")}
       </div>
       <div class="post-body">${renderBodyParagraphs(post.body)}</div>
       <div class="post-footer-note">

@@ -127,11 +127,11 @@
       <a class="back-link" href="unternehmen.html">← Zurück zur Übersicht</a>
       <div class="company-detail-head">
         <div class="company-detail-name">
-          <span class="company-ticker mono">${company.ticker} · ${company.sector}</span>
-          <h1>${company.name}</h1>
-          <div class="company-detail-industry">${company.industry}</div>
+          <span class="company-ticker mono">${escapeHtml(company.ticker)} · ${escapeHtml(company.sector)}</span>
+          <h1>${escapeHtml(company.name)}</h1>
+          <div class="company-detail-industry">${escapeHtml(company.industry)}</div>
         </div>
-        <span class="halal-badge">✓ Halal-Screen: ${company.halal_status}</span>
+        <span class="halal-badge">✓ Halal-Screen: ${escapeHtml(company.halal_status)}</span>
       </div>
 
       <div class="company-detail-chart">
@@ -139,23 +139,23 @@
         <div class="company-change mono ${changeClass}" style="margin-top: 18px;">${sign}${company.price_change_1y_pct.toFixed(1)}% · 1 Jahr</div>
       </div>
 
-      <p style="color: var(--sage); font-size: 1.02rem; line-height: 1.75;">${company.description}</p>
+      <p style="color: var(--sage); font-size: 1.02rem; line-height: 1.75;">${escapeHtml(company.description)}</p>
 
       <div class="halal-note-box">
-        <strong style="color: var(--jade);">Halal-Einordnung:</strong> ${company.halal_note}
+        <strong style="color: var(--jade);">Halal-Einordnung:</strong> ${escapeHtml(company.halal_note)}
       </div>
 
       <div class="company-detail-grid">
         <div>
           <h3>Chancen</h3>
           <ul class="pros-list">
-            ${company.pros.map(p => `<li><span class="mark">+</span>${p}</li>`).join("")}
+            ${company.pros.map(p => `<li><span class="mark">+</span>${escapeHtml(p)}</li>`).join("")}
           </ul>
         </div>
         <div>
           <h3>Risiken</h3>
           <ul class="cons-list">
-            ${company.cons.map(c => `<li><span class="mark">−</span>${c}</li>`).join("")}
+            ${company.cons.map(c => `<li><span class="mark">−</span>${escapeHtml(c)}</li>`).join("")}
           </ul>
         </div>
       </div>
