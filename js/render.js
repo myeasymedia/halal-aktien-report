@@ -96,6 +96,18 @@ function blogListItemHTML(post, basePath = "") {
   `;
 }
 
+/** Baut den "gesperrter Insight"-Hinweis: welche Aktie betroffen ist, der
+ *  Halal-Check und die Markteinschätzung bleiben der zahlenden Telegram-Gruppe
+ *  vorbehalten -- auf der Website steht bewusst nur die reine, geprüfte News. */
+function lockedInsightHTML() {
+  return `
+    <div class="locked-insight">
+      <p>🔒 Welche Aktie das betreffen könnte, der Halal-Check dazu und die Markteinschätzung gibt's in der Telegram-Gruppe.</p>
+      <a class="btn-primary" href="https://t.me/+EwK47soi2l5lZWMy" target="_blank" rel="noopener">Zugang sichern →</a>
+    </div>
+  `;
+}
+
 /** Wandelt den mit \n\n getrennten Fließtext eines Beitrags in <p>-Absätze um.
  *  Escaped den Text zuerst (externe Quelle!) und wandelt \n innerhalb eines
  *  Absatzes in <br> um, damit einzeilige Absätze (z.B. "🎯 Fokus: ...") erhalten bleiben. */

@@ -600,6 +600,33 @@ a { color: inherit; text-decoration: none; }
   background: var(--jade);
 }
 
+/* ---------------- Locked insight (Paid-Telegram-Teaser) ---------------- */
+.locked-insight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+  padding: 22px 26px;
+  border: 1px dashed var(--jade-dim);
+  border-radius: var(--radius-md);
+  background: rgba(45,212,167,0.05);
+}
+
+.locked-insight p {
+  color: var(--sage);
+  font-size: 0.92rem;
+  margin: 0;
+  max-width: 480px;
+}
+
+.locked-insight .btn-primary {
+  padding: 11px 22px;
+  font-size: 0.84rem;
+  white-space: nowrap;
+}
+
 /* ---------------- Company grid ---------------- */
 .company-grid {
   display: grid;
