@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://DEINE-DOMAIN.tld/sitemap.xml
+Sitemap: https://joyful-dasik-cdf792.netlify.app/sitemap.xml

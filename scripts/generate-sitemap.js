@@ -11,7 +11,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const SITE_URL = "https://DEINE-DOMAIN.tld";
+const SITE_URL = "https://joyful-dasik-cdf792.netlify.app";
 
 const COMPANIES = require(path.join(__dirname, "..", "data", "companies.js"));
 const POSTS = require(path.join(__dirname, "..", "data", "posts.js"));
