@@ -12,6 +12,19 @@
 
 const POSTS = [
   {
+    slug: `test-pipeline-automatisch-entfernt`,
+    date: `2026-07-26`,
+    tag: `Marktbeobachtung`,
+    title: `[TEST] Automatisierter Pipeline-Test -- bitte ignorieren`,
+    excerpt: `Automatisierter Test der Veroeffentlichungs-Pipeline, wird sofort wieder entfernt.`,
+    assets: [],
+    body: `Automatisierter Test der Pipeline (VPS -> GitHub -> Netlify). Wird sofort wieder entfernt.
+
+Quelle: Automatisierter Test.
+
+Keine echte Nachricht.`,
+  },
+  {
     slug: "trump-iran-verhandlungen-gold-bitcoin-apple",
     date: "2026-07-26",
     tag: "Marktbeobachtung",
