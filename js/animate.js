@@ -57,3 +57,26 @@ function initRevealScan() {
 
 window.initRevealScan = initRevealScan;
 document.addEventListener('DOMContentLoaded', initRevealScan);
+
+/** Mobiles Hamburger-Menü: togglet die Dropdown-Liste, schließt beim Linkklick. */
+function initMobileNav() {
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-mobile-menu');
+  if (!toggle || !menu) return;
+
+  function close() {
+    menu.classList.remove('is-open');
+    toggle.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  toggle.addEventListener('click', () => {
+    const isOpen = menu.classList.toggle('is-open');
+    toggle.classList.toggle('is-open', isOpen);
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  menu.querySelectorAll('a').forEach((a) => a.addEventListener('click', close));
+}
+
+document.addEventListener('DOMContentLoaded', initMobileNav);

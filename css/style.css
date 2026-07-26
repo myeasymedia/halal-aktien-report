@@ -55,7 +55,10 @@ h1, h2, h3, h4 {
   letter-spacing: -0.01em;
   line-height: 1.08;
   color: var(--ivory);
+  overflow-wrap: break-word;
 }
+
+img, svg, canvas { max-width: 100%; }
 
 a { color: inherit; text-decoration: none; }
 
@@ -818,6 +821,59 @@ a { color: inherit; text-decoration: none; }
 }
 .footer-links a:hover { color: var(--jade); }
 
+/* ---------------- Mobile nav (hamburger + dropdown) ---------------- */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.nav-toggle span {
+  display: block;
+  width: 16px;
+  height: 1.5px;
+  margin: 0 auto;
+  background: var(--ivory);
+  transition: transform 0.25s var(--ease), opacity 0.25s var(--ease);
+}
+.nav-toggle.is-open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-toggle.is-open span:nth-child(2) { opacity: 0; }
+.nav-toggle.is-open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+.nav-mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 49;
+  padding: 90px 24px 24px;
+  background: var(--ink);
+  border-bottom: 1px solid var(--border);
+  transform: translateY(-8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s var(--ease), transform 0.25s var(--ease);
+}
+.nav-mobile-menu.is-open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.nav-mobile-menu a {
+  padding: 14px 4px;
+  font-size: 1.05rem;
+  color: var(--ivory);
+  border-bottom: 1px solid var(--border);
+}
+.nav-mobile-menu a:hover { color: var(--jade); }
+
 /* ---------------- Responsive ---------------- */
 @media (max-width: 900px) {
   .company-grid { grid-template-columns: 1fr 1fr; }
@@ -825,12 +881,21 @@ a { color: inherit; text-decoration: none; }
   .blog-card.featured { grid-row: auto; min-height: 260px; }
   #hero-canvas { width: 100%; right: 0; opacity: 0.35; }
   .nav-links { display: none; }
+  .nav-toggle { display: flex; }
+  .nav-mobile-menu { display: flex; }
   .section-head { flex-direction: column; align-items: flex-start; }
+  .footer-top { flex-direction: column; align-items: flex-start; gap: 18px; }
 }
 
 @media (max-width: 600px) {
+  .wrap { padding: 0 20px; }
   .company-grid { grid-template-columns: 1fr; }
   .hero-stats { flex-wrap: wrap; gap: 24px; }
+  .hero h1 { font-size: clamp(1.9rem, 8.2vw, 2.6rem); }
+  .nav-brand { font-size: 1rem; }
+  .nav { padding: 16px 20px; }
+  .nav-cta span, .nav-cta { font-size: 0.78rem; }
+  .report-card, .community-card { padding: 28px 22px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
