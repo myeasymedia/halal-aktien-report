@@ -1,5 +1,5 @@
 /* ============================================================
-   Halal Aktien Report -- Design System
+   Barakah Finance -- Design System
    Palette: Ink #0B1210, Emerald #114B4C, Jade #2DD4A7,
             Brass #C9A15A, Ivory #F3EFE6, Sage #8FA69C
    Type: Fraunces (Display), Inter (Body), IBM Plex Mono (Data)
@@ -502,12 +502,449 @@ a { color: inherit; text-decoration: none; }
   .process-grid { grid-template-columns: 1fr; }
 }
 
+/* ---------------- Gradient-Blob-Feld (Tiefe hinter Sections) ---------------- */
+.blob-field {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 18%, #000 82%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, #000 18%, #000 82%, transparent);
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.28;
+  animation: blob-drift 24s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.blob-jade { width: 420px; height: 420px; background: var(--jade); top: -140px; left: 6%; }
+.blob-brass { width: 380px; height: 380px; background: var(--brass); bottom: -160px; right: 4%; animation-duration: 28s; animation-delay: -8s; }
+.blob-emerald { width: 460px; height: 460px; background: var(--emerald); top: 20%; right: 30%; animation-duration: 32s; animation-delay: -14s; opacity: 0.22; }
+
+@keyframes blob-drift {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(50px, -36px) scale(1.1); }
+}
+
+/* ---------------- Cursor-Spotlight ---------------- */
+.spotlight {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s var(--ease);
+  background: radial-gradient(560px circle at var(--x, 50%) var(--y, 50%), rgba(45, 212, 167, 0.1), transparent 42%);
+}
+.spotlight.is-active { opacity: 1; }
+
+/* ---------------- 3D Card-Tilt (Maus-getrieben, per JS) ---------------- */
+.tilt {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* ---------------- Ticker-Marquee ---------------- */
+.marquee {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 22px 0;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  width: max-content;
+  animation: marquee-scroll 34s linear infinite;
+}
+
+.marquee:hover .marquee-track { animation-play-state: paused; }
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.86rem;
+  color: var(--sage);
+  white-space: nowrap;
+}
+
+.marquee-item .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--jade-dim); flex-shrink: 0; }
+.marquee-item strong { color: var(--ivory); font-weight: 500; }
+.marquee-item .chg { font-size: 0.8rem; }
+.marquee-item .chg.up { color: var(--jade); }
+.marquee-item .chg.down { color: #d97757; }
+
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@media (max-width: 600px) {
+  .marquee-track { gap: 36px; animation-duration: 22s; }
+}
+
+/* ---------------- Feature-Grid ("Warum Barakah Finance") ---------------- */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.feature-card {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 32px 28px;
+  background: rgba(255, 255, 255, 0.015);
+  transition: transform 0.4s var(--ease), border-color 0.35s var(--ease), background 0.35s var(--ease);
+}
+.feature-card:hover { border-color: var(--jade-dim); background: rgba(45, 212, 167, 0.035); }
+
+.feature-icon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 22px;
+  color: var(--jade);
+}
+.feature-icon path, .feature-icon circle { vector-effect: non-scaling-stroke; }
+
+.feature-card h3 { font-size: 1.12rem; margin-bottom: 10px; }
+.feature-card p { font-size: 0.88rem; color: var(--sage); line-height: 1.6; }
+
+@media (max-width: 900px) { .feature-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .feature-grid { grid-template-columns: 1fr; } }
+
+/* ---------------- Methodik-Timeline (Deep-Dive) ---------------- */
+.methodology { position: relative; overflow: hidden; }
+
+.methodology-intro { max-width: 620px; margin-bottom: 8px; }
+.methodology-intro p { color: var(--sage); }
+
+.timeline {
+  position: relative;
+  margin-top: 56px;
+  padding-left: 46px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--jade-dim), transparent);
+}
+
+.timeline-item { position: relative; padding-bottom: 52px; }
+.timeline-item:last-child { padding-bottom: 0; }
+
+.timeline-dot {
+  position: absolute;
+  left: -46px;
+  top: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--ink);
+  border: 2px solid var(--jade-dim);
+  transition: all 0.5s var(--ease);
+}
+.timeline-item.is-visible .timeline-dot {
+  background: var(--jade);
+  border-color: var(--jade);
+  box-shadow: 0 0 14px 2px rgba(45, 212, 167, 0.45);
+}
+
+.timeline-meta {
+  display: block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.76rem;
+  color: var(--jade-dim);
+  margin-bottom: 8px;
+}
+
+.timeline-item h3 { font-size: 1.3rem; margin-bottom: 12px; }
+.timeline-item p { color: var(--sage); max-width: 640px; line-height: 1.75; font-size: 0.96rem; }
+.timeline-item ul { margin-top: 14px; padding-left: 20px; color: var(--sage); font-size: 0.9rem; line-height: 1.8; }
+
+@media (max-width: 600px) {
+  .timeline { padding-left: 34px; }
+  .timeline-dot { left: -34px; }
+}
+
+/* ---------------- Anlageklassen-Showcase ---------------- */
+.asset-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.asset-card {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 26px;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.025), transparent);
+  transition: transform 0.4s var(--ease), border-color 0.35s var(--ease);
+  overflow: hidden;
+}
+.asset-card:hover { border-color: var(--brass); }
+
+.asset-tag {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--brass);
+  letter-spacing: 0.06em;
+}
+
+.asset-visual { height: 84px; margin-bottom: 20px; overflow: visible; }
+
+.asset-visual .bar {
+  transform-origin: bottom;
+  animation: bar-grow 2.6s var(--ease) infinite alternate;
+}
+.asset-visual .bar:nth-child(2) { animation-delay: -0.4s; }
+.asset-visual .bar:nth-child(3) { animation-delay: -0.9s; }
+.asset-visual .bar:nth-child(4) { animation-delay: -1.4s; }
+.asset-visual .bar:nth-child(5) { animation-delay: -1.9s; }
+
+@keyframes bar-grow {
+  from { transform: scaleY(0.55); }
+  to   { transform: scaleY(1); }
+}
+
+.asset-visual .orbit { animation: orbit-spin 7s linear infinite; transform-origin: center; }
+@keyframes orbit-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+.asset-visual .pulse-ring { animation: pulse-ring 2.4s var(--ease) infinite; transform-origin: center; }
+@keyframes pulse-ring {
+  0%   { opacity: 0.7; transform: scale(0.85); }
+  70%  { opacity: 0; transform: scale(1.25); }
+  100% { opacity: 0; transform: scale(1.25); }
+}
+
+.asset-card h3 { font-size: 1.15rem; margin-bottom: 8px; }
+.asset-card p { font-size: 0.86rem; color: var(--sage); line-height: 1.65; }
+
+@media (max-width: 900px) { .asset-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .asset-grid { grid-template-columns: 1fr; } }
+
+/* ---------------- FAQ-Akkordeon ---------------- */
+.faq-list {
+  border-top: 1px solid var(--border);
+  max-width: 780px;
+}
+
+.faq-item { border-bottom: 1px solid var(--border); }
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 26px 4px;
+  font-family: 'Fraunces', serif;
+  font-size: 1.06rem;
+  color: var(--ivory);
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::marker { content: ""; }
+
+.faq-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  color: var(--jade);
+  transition: transform 0.3s var(--ease);
+}
+.faq-item[open] .faq-icon { transform: rotate(45deg); }
+
+.faq-answer {
+  padding: 0 34px 26px 4px;
+  color: var(--sage);
+  font-size: 0.94rem;
+  line-height: 1.75;
+  max-width: 680px;
+  animation: faq-fade 0.35s var(--ease);
+}
+
+@keyframes faq-fade {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .faq-item summary { padding: 20px 2px; font-size: 0.98rem; }
+  .faq-answer { padding: 0 20px 22px 2px; }
+}
+
+/* ---------------- Angebot: Website (gratis) vs. Telegram-Community ---------------- */
+.offer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.offer-card {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.015);
+  display: flex;
+  flex-direction: column;
+}
+
+.offer-card.featured {
+  border-color: var(--jade);
+  background: linear-gradient(160deg, rgba(45, 212, 167, 0.09), rgba(11, 18, 16, 0.3));
+  box-shadow: 0 30px 70px -34px rgba(45, 212, 167, 0.35);
+}
+
+.offer-badge {
+  position: absolute;
+  top: -14px;
+  left: 40px;
+  background: var(--jade);
+  color: var(--ink);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+}
+
+.offer-plan {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.76rem;
+  color: var(--sage-dim);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.offer-card h3 { font-size: 1.5rem; margin-bottom: 20px; }
+
+.offer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 28px;
+  flex-grow: 1;
+}
+
+.offer-list li {
+  display: flex;
+  gap: 10px;
+  font-size: 0.92rem;
+  color: var(--sage);
+  line-height: 1.5;
+}
+
+.offer-list .mark-yes { color: var(--jade); flex-shrink: 0; }
+.offer-list .mark-no { color: var(--sage-dim); flex-shrink: 0; }
+.offer-card.featured .offer-list li { color: var(--ivory); }
+
+.offer-foot-note {
+  font-size: 0.78rem;
+  color: var(--sage-dim);
+  margin-top: 16px;
+}
+
+.telegram-preview {
+  margin-top: 24px;
+  border: 1px solid var(--jade-dim);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  background: rgba(11, 18, 16, 0.5);
+}
+
+.telegram-preview-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--sage-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.telegram-bubble {
+  background: rgba(45, 212, 167, 0.06);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+
+.telegram-bubble-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--jade);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.telegram-bubble-head .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--jade); flex-shrink: 0; }
+.telegram-bubble-head .ts { margin-left: auto; font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; color: var(--sage-dim); font-weight: 400; }
+
+.telegram-bubble p { font-size: 0.88rem; color: var(--ivory); opacity: 0.92; line-height: 1.6; margin: 0; }
+
+@media (max-width: 900px) {
+  .offer-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .offer-card { padding: 28px 24px; }
+}
+
+/* ---------------- Sticky Telegram-CTA ---------------- */
+.sticky-cta {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 45;
+  opacity: 0;
+  transform: translateY(14px);
+  pointer-events: none;
+  transition: opacity 0.4s var(--ease), transform 0.4s var(--ease);
+}
+.sticky-cta.is-visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+.sticky-cta .btn-primary { box-shadow: var(--shadow-deep); }
+
+@media (max-width: 600px) {
+  .sticky-cta { right: 16px; bottom: 16px; }
+  .sticky-cta .btn-primary { padding: 13px 20px; font-size: 0.82rem; }
+}
+
 /* ---------------- Section shell ---------------- */
 .section {
   position: relative;
   z-index: 1;
   padding: 120px 0;
 }
+
+.section.has-blobs { overflow: hidden; }
 
 .section-head {
   display: flex;
@@ -641,7 +1078,7 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 28px;
-  transition: transform 0.35s var(--ease), border-color 0.35s var(--ease), background 0.35s var(--ease);
+  transition: transform 0.4s var(--ease), border-color 0.35s var(--ease), background 0.35s var(--ease);
   background: rgba(255,255,255,0.015);
 }
 
@@ -653,8 +1090,10 @@ a { color: inherit; text-decoration: none; }
 
 .company-top {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
@@ -677,6 +1116,8 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid var(--jade-dim);
   padding: 4px 10px;
   border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .company-change {

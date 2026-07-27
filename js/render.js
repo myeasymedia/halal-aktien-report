@@ -56,7 +56,7 @@ function companyCardHTML(c, basePath = "pages/") {
   const sparkColor = c.price_change_1y_pct >= 0 ? "#2dd4a7" : "#d97757";
 
   return `
-    <a class="company-card" href="${basePath}unternehmen-detail.html?ticker=${encodeURIComponent(c.ticker)}">
+    <a class="company-card tilt" href="${basePath}unternehmen-detail.html?ticker=${encodeURIComponent(c.ticker)}">
       <div class="company-top">
         <div>
           <div class="company-ticker mono">${escapeHtml(c.ticker)}</div>
@@ -73,7 +73,7 @@ function companyCardHTML(c, basePath = "pages/") {
 /** Erzeugt HTML für eine Blog-Karte (Grid-Ansicht, z.B. Startseite). */
 function blogCardHTML(post, { featured = false, basePath = "pages/" } = {}) {
   return `
-    <a class="blog-card ${featured ? "featured" : ""}" href="${basePath}blog-post.html?slug=${encodeURIComponent(post.slug)}">
+    <a class="blog-card tilt ${featured ? "featured" : ""}" href="${basePath}blog-post.html?slug=${encodeURIComponent(post.slug)}">
       <div class="blog-date mono">${formatDate(post.date)} · ${escapeHtml(post.tag)}</div>
       <h4>${escapeHtml(post.title)}</h4>
       ${featured ? `<p class="blog-excerpt">${escapeHtml(post.excerpt)}</p>` : ""}

@@ -1,6 +1,6 @@
 /* ============================================================
    companies.js
-   Unternehmensdaten für den Halal Aktien Report.
+   Unternehmensdaten für Barakah Finance.
 
    SELBST ERWEITERN: Kopiere einfach einen bestehenden Block
    (zwischen { und }), füge ihn vor die schließende eckige

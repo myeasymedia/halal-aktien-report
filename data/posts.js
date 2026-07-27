@@ -1,6 +1,6 @@
 /* ============================================================
    posts.js
-   Blog-Beiträge für den Halal Aktien Report.
+   Blog-Beiträge für Barakah Finance.
 
    SELBST ERWEITERN (täglicher Post): Kopiere einen bestehenden
    Block, füge ihn GANZ OBEN in das Array ein (direkt nach dem

@@ -80,3 +80,107 @@ function initMobileNav() {
 }
 
 document.addEventListener('DOMContentLoaded', initMobileNav);
+
+/** Nur auf Geräten mit echter Maus + ohne "reduzierte Bewegung"-Wunsch aktivieren. */
+const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches && !prefersReducedMotion;
+
+/** Cursor-Spotlight: sanfter Lichtkegel, der der Maus innerhalb eines
+ *  [data-spotlight]-Containers folgt (z.B. Hero, Feature-Grid-Sections). */
+function initSpotlights() {
+  if (!canHover) return;
+  document.querySelectorAll('[data-spotlight]').forEach((container) => {
+    const glow = document.createElement('div');
+    glow.className = 'spotlight';
+    container.prepend(glow);
+    container.addEventListener('mouseenter', () => glow.classList.add('is-active'));
+    container.addEventListener('mouseleave', () => glow.classList.remove('is-active'));
+    container.addEventListener('mousemove', (e) => {
+      const r = container.getBoundingClientRect();
+      glow.style.setProperty('--x', `${e.clientX - r.left}px`);
+      glow.style.setProperty('--y', `${e.clientY - r.top}px`);
+    });
+  });
+}
+
+/** 3D-Tilt-Effekt: neigt Karten leicht Richtung Cursor (Apple/Stripe-Stil).
+ *  Setzt das transform inline, damit es die bestehenden CSS-:hover-Transforms
+ *  (z.B. translateY bei .company-card) beim Verlassen sauber wieder freigibt. */
+function initTilt() {
+  if (!canHover) return;
+  document.querySelectorAll('.tilt').forEach((card) => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transition = 'transform 0.08s linear';
+    });
+    card.addEventListener('mousemove', (e) => {
+      const r = card.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width - 0.5;
+      const py = (e.clientY - r.top) / r.height - 0.5;
+      card.style.transform = `perspective(900px) rotateX(${(-py * 7).toFixed(2)}deg) rotateY(${(px * 9).toFixed(2)}deg) translateY(-6px)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transition = 'transform 0.5s var(--ease)';
+      card.style.transform = '';
+    });
+  });
+}
+
+/** Registriert Tilt-Handler für Karten, die nach dem initialen Laden per
+ *  innerHTML nachgerendert werden (z.B. Unternehmens-/Blog-Grid). */
+function refreshTilt() {
+  initTilt();
+}
+window.refreshTilt = refreshTilt;
+
+/** FAQ-Akkordeon: schließt die jeweils anderen <details>-Einträge einer
+ *  [data-faq-group], damit immer nur eine Antwort offen ist. */
+function initFaqAccordion() {
+  document.querySelectorAll('[data-faq-group]').forEach((group) => {
+    const items = [...group.querySelectorAll('.faq-item')];
+    items.forEach((item) => {
+      item.addEventListener('toggle', () => {
+        if (item.open) items.forEach((other) => { if (other !== item) other.open = false; });
+      });
+    });
+  });
+}
+
+/** Sticky Telegram-CTA: erscheint, sobald der Hero (falls vorhanden) aus dem
+ *  Blickfeld gescrollt ist, und versteckt sich wieder, sobald die große
+ *  Community/Telegram-Karte selbst sichtbar ist -- so gibt es nie zwei
+ *  konkurrierende Beitreten-CTAs gleichzeitig auf dem Bildschirm. */
+function initStickyCta() {
+  const sticky = document.querySelector('.sticky-cta');
+  if (!sticky || !('IntersectionObserver' in window)) return;
+
+  const hero = document.querySelector('.hero');
+  const community = document.querySelector('.community-card');
+  let heroHidden = !hero;
+  let communityVisible = false;
+
+  function update() {
+    sticky.classList.toggle('is-visible', heroHidden && !communityVisible);
+  }
+
+  if (hero) {
+    new IntersectionObserver(([entry]) => {
+      heroHidden = !entry.isIntersecting;
+      update();
+    }, { threshold: 0 }).observe(hero);
+  }
+
+  if (community) {
+    new IntersectionObserver(([entry]) => {
+      communityVisible = entry.isIntersecting;
+      update();
+    }, { threshold: 0.15 }).observe(community);
+  }
+
+  update();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initSpotlights();
+  initTilt();
+  initFaqAccordion();
+  initStickyCta();
+});
