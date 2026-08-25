@@ -12,6 +12,24 @@
 
 const POSTS = [
   {
+    slug: `2026-08-25-neue-installationen-entstehen-auf-insel-wahrend-china-den-au`,
+    date: `2026-08-25`,
+    tag: `Update`,
+    title: `Neue Installationen entstehen auf Insel, während China den Aufbau des Südchinesischen Meeres beschleunigt`,
+    excerpt: `SGA Raised seine Wette auf Alphabet (GOOG) als AI-Anforderung beschleunigt. Philippinen, um die militärische Drohnenflotte zu erweitern, da die Spannungen im Südchinesischen Meer steigen.`,
+    assets: [],
+    sources: [
+      { name: `Reuters`, url: `https://news.google.com/rss/articles/CBMivgFBVV95cUxNNVNLQXVYZlJVS2s4RkVMRlB3anJuLUd2WlVoTk5QMm96YVhTWHZCLXdBcUptQWdGclRKc0NRaTBaZFM4MjQ2UFVFanFoYndGRmgyVFlZWko2Q1RxRVhhU0QxSmhubmFEeHduMUJRUDdNVmVkSnREQnJQY0EydnNTamhMUnJZWldaSmF6Rkl5bXBIcEF6WVV1dU1Dby1KNjU5Yi1Dalk5Z1pUNVpVMlhxUUpBb09fdXpxTDYwaFd3?oc=5` },
+      { name: `Yahoo Finance`, url: `https://finance.yahoo.com/markets/stocks/articles/sga-raised-bet-alphabet-goog-133755704.html` },
+      { name: `South China Morning Post (SCMP)`, url: `https://www.scmp.com/news/asia/southeast-asia/article/3365188/philippines-expand-military-drone-fleet-south-china-sea-tensions-rise?utm_source=rss_feed` },
+    ],
+    body: `SGA Raised seine Wette auf Alphabet (GOOG) als AI-Anforderung beschleunigt. Philippinen, um die militärische Drohnenflotte zu erweitern, da die Spannungen im Südchinesischen Meer steigen.
+
+Quellen: Reuters, South China Morning Post (SCMP), Yahoo Finance.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-25-krypto-klammern-die-hartesten-us-sanktionen-der-geschichte-g`,
     date: `2026-08-25`,
     tag: `Marktbeobachtung`,
