@@ -12,6 +12,23 @@
 
 const POSTS = [
   {
+    slug: `2026-08-25-krypto-klammern-die-hartesten-us-sanktionen-der-geschichte-g`,
+    date: `2026-08-25`,
+    tag: `Marktbeobachtung`,
+    title: `Krypto-Klammern "Die härtesten US-Sanktionen der Geschichte" gegen den Iran in Stunden — Wie könnten XRP und Bitcoin beeinflusst werden?`,
+    excerpt: `Können neue US-Sanktionen die Schattenwirtschaft des Iran lähmen? Die USA weiten die Sanktionen gegen die iranischen Finanznetze aus und zielen auf Krypto, Gold, Luftfahrt und Schifffahrt.`,
+    assets: [],
+    sources: [
+      { name: `Yahoo Finance`, url: `https://finance.yahoo.com/markets/crypto/articles/crypto-braces-history-toughest-us-124626091.html` },
+      { name: `Deutsche Welle (DW)`, url: `https://www.dw.com/en/can-new-us-sanctions-cripple-iran-s-shadow-economy/a-78494630?maca=en-rss-en-all-1573-rdf` },
+    ],
+    body: `Können neue US-Sanktionen die Schattenwirtschaft des Iran lähmen? Die USA weiten die Sanktionen gegen die iranischen Finanznetze aus und zielen auf Krypto, Gold, Luftfahrt und Schifffahrt.
+
+Quellen: Deutsche Welle (DW), Yahoo Finance.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-25-warum-sturzt-intuit-heute`,
     date: `2026-08-25`,
     tag: `Update`,
