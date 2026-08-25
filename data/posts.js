@@ -12,6 +12,24 @@
 
 const POSTS = [
   {
+    slug: `2026-08-25-warum-steigt-die-aktie-von-standard-nuclear-heute-stark-an`,
+    date: `2026-08-25`,
+    tag: `Update`,
+    title: `Warum steigt die Aktie von Standard Nuclear heute stark an?`,
+    excerpt: `Warum die Marvell Technology-Aktie heute rasant steigt. Warum verkauft Russland sein Gold?`,
+    assets: [],
+    sources: [
+      { name: `Investing.com`, url: `https://www.investing.com/news/stock-market-news/why-is-standard-nuclear-stock-surging-today-93CH-4875744` },
+      { name: `Yahoo Finance`, url: `https://finance.yahoo.com/markets/stocks/articles/why-marvell-technology-stock-rocketing-161452851.html` },
+      { name: `Deutsche Welle (DW)`, url: `https://www.dw.com/en/why-is-russia-selling-its-gold/a-78145069?maca=en-rss-en-all-1573-rdf` },
+    ],
+    body: `Warum die Marvell Technology-Aktie heute rasant steigt. Warum verkauft Russland sein Gold?
+
+Quellen: Deutsche Welle (DW), Investing.com, Yahoo Finance.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: "trump-iran-verhandlungen-gold-bitcoin-apple",
     date: "2026-07-26",
     tag: "Marktbeobachtung",
