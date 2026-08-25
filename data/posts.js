@@ -12,6 +12,23 @@
 
 const POSTS = [
   {
+    slug: `2026-08-25-eine-neue-solana-abstimmung-konnte-die-taglichen-sol-verbren`,
+    date: `2026-08-25`,
+    tag: `Marktbeobachtung`,
+    title: `Eine neue Solana-Abstimmung könnte die täglichen SOL-Verbrennungen auf 800.000 US-Dollar steigern und die Erstellung neuer Token verlangsamen`,
+    excerpt: `Solana-Transaktionen erreichten einen Rekordwert von 4,2 Milliarden, während SOL um 40 % zulegte.`,
+    assets: [],
+    sources: [
+      { name: `CoinDesk`, url: `https://www.coindesk.com/tech/2026/08/24/new-solana-vote-could-ramp-daily-sol-burns-to-usd800-000-and-slow-new-token-creation` },
+      { name: `Cointelegraph`, url: `https://cointelegraph.com/news/solana-record-transactions-rwa-sol-price?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound` },
+    ],
+    body: `Solana-Transaktionen erreichten einen Rekordwert von 4,2 Milliarden, während SOL um 40 % zulegte. Tokenisierte reale Vermögenswerte auf Solana nähern sich 4 Milliarden US-Dollar, da sich die Netzwerkaktivität zusammen mit einer breiteren Erholung der Kryptomärkte beschleunigt.
+
+Quellen: CoinDesk, Cointelegraph.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-25-warum-steigt-die-aktie-von-standard-nuclear-heute-stark-an`,
     date: `2026-08-25`,
     tag: `Update`,
