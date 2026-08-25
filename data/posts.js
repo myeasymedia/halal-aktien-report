@@ -12,6 +12,30 @@
 
 const POSTS = [
   {
+    slug: `2026-08-25-kanada-erhebt-vergeltungszolle-auf-us-waren-im-wert-von-20-m`,
+    date: `2026-08-25`,
+    tag: `Update`,
+    title: `Kanada erhebt Vergeltungszölle auf US-Waren im Wert von 20 Milliarden US-Dollar, da sich der Handelskrieg verschärft`,
+    excerpt: `Optionen zeigen, dass Nvidia-Aktien nach den Gewinnen einen Kursanstieg von 280 Milliarden US-Dollar erleben werden.`,
+    assets: [],
+    sources: [
+      { name: `Reuters`, url: `https://news.google.com/rss/articles/CBMivwFBVV95cUxQYnllQWZiMlB2MERDOUJLLWZUdGs0SjFhaDVKcVJwNWVGb0FhZ2pramhtQVJlT2l0eUlBREV1YUgzTEgxZzliNjVQR1hRTWdOdGJXSFhlamF3LXl0dGRmZjg0c1NwWEZKNDRiRkgyZG5QUmw1UlZ3dDA2ZlNtMTNabUVxc0UzdDRsNTM1b2hPWHlTZjVadWxJUTRLWGVuM1A3eFQxU21lQm1RY3hpMS1URUcxX1lGQktwZnR6SFhkOA?oc=5` },
+      { name: `Associated Press (AP)`, url: `https://news.google.com/rss/articles/CBMigwFBVV95cUxNUExDUGZBbXhJOXZta0tiOEhmckJ2c1Viei1pMnk2ZEpwVVdieFUzVU54X194NW5LRmZ1NlNIaWhCWVFMNFpZN3hzSXJUcF80NFg2TVdfVGJmUzByWkIzQVV4ckE4N2xscjNVeHNiekZKRlBBNlBVVHVsc2NRVVhfQVdxVQ?oc=5` },
+      { name: `Financial Times (FT)`, url: `https://www.ft.com/content/7ced71c2-03b8-4569-a68d-14624a7e83f2?syn-25a6b1a6=1` },
+      { name: `BBC News`, url: `https://www.bbc.co.uk/news/articles/c3v4xg5klx7o?at_medium=RSS&at_campaign=rss` },
+      { name: `BBC World`, url: `https://www.bbc.co.uk/news/articles/c3v4xg5klx7o?at_medium=RSS&at_campaign=rss` },
+      { name: `BBC Business`, url: `https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss` },
+      { name: `The Guardian`, url: `https://www.theguardian.com/us-news/live/2026/aug/25/donald-trump-tariffs-canada-midterms-primary-south-carolina-iran-ukraine-voting-rights-latest-news-updates` },
+      { name: `Deutsche Welle (DW)`, url: `https://www.dw.com/en/canada-announces-retaliatory-tariffs-on-us-goods/a-78491819?maca=en-rss-en-all-1573-rdf` },
+      { name: `Al Jazeera English`, url: `https://www.aljazeera.com/economy/2026/8/25/canada-hits-us-with-counter-tariffs-targeting-hundreds-of-products?traffic_source=rss` },
+    ],
+    body: `Optionen zeigen, dass Nvidia-Aktien nach den Gewinnen einen Kursanstieg von 280 Milliarden US-Dollar erleben werden. Häuser stehen unter Wasser, Zehntausende werden im Süden Chinas umgesiedelt, während die Überschwemmungen zunehmen.
+
+Quellen: Al Jazeera English, Associated Press (AP), BBC Business, BBC News, BBC World, Deutsche Welle (DW), Financial Times (FT), Reuters, The Guardian.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-25-eine-neue-solana-abstimmung-konnte-die-taglichen-sol-verbren`,
     date: `2026-08-25`,
     tag: `Marktbeobachtung`,
