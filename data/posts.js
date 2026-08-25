@@ -12,6 +12,24 @@
 
 const POSTS = [
   {
+    slug: `2026-08-25-warum-sturzt-intuit-heute`,
+    date: `2026-08-25`,
+    tag: `Update`,
+    title: `Warum stürzt Intuit heute?`,
+    excerpt: `Intuit Stockrutschen nach Q4 Ergebnis Beat wird durch weiche Führung gefolgt. Warum verkauft Russland sein Gold?`,
+    assets: [],
+    sources: [
+      { name: `Investing.com`, url: `https://www.investing.com/news/stock-market-news/why-is-intuit-stock-plunging-today-93CH-4875915` },
+      { name: `Seeking Alpha`, url: `https://seekingalpha.com/news/4636754-intuit-stock-slides-after-q4-earnings-beat-is-followed-up-by-soft-guidance?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news` },
+      { name: `Deutsche Welle (DW)`, url: `https://www.dw.com/en/why-is-russia-selling-its-gold/a-78145069?maca=en-rss-en-all-1573-rdf` },
+    ],
+    body: `Intuit Stockrutschen nach Q4 Ergebnis Beat wird durch weiche Führung gefolgt. Warum verkauft Russland sein Gold?
+
+Quellen: Deutsche Welle (DW), Investing.com, Seeking Alpha.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-25-kanada-erhebt-vergeltungszolle-auf-us-waren-im-wert-von-20-m`,
     date: `2026-08-25`,
     tag: `Update`,
