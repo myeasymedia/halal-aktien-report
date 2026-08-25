@@ -12,6 +12,23 @@
 
 const POSTS = [
   {
+    slug: `2026-08-25-bitcoin-nimmt-einen-beat-nach-debasement-handel-funken-am-be`,
+    date: `2026-08-25`,
+    tag: `Update`,
+    title: `Bitcoin nimmt einen Beat nach Debasement-Handel Funken am besten Woche in über drei Jahren`,
+    excerpt: `Bitcoin steigt über $80.000 als weicher Dollar, Debasement fürchtet Momentum zu steigern.`,
+    assets: [],
+    sources: [
+      { name: `Investing.com`, url: `https://www.investing.com/news/cryptocurrency-news/bitcoin-rallies-past-80k-as-debasement-trade-dents-dollar-4874510` },
+      { name: `Reuters`, url: `https://news.google.com/rss/articles/CBMivwFBVV95cUxOU1A3ZDBwNm85VE41dmUyZGMzWUdmTHJMb3JMYkl4V21XdG9PTHNOZnFnLXhPR2VpSWtsbDNla1pna3I2WHNSRzU2TkhERE9oMnRNZGluNDNHMlFOWnlmSUEtT1dwNGxqVnRrQ1pJemRCTzlDa3A3b3hJV0pNSGJPSFpYbktMemhOblpRZW1QekkwT3F0VEY5TkNQaFZhdlZjejFTU1JjTjVKZ01SNjZMQ195YWlZOVA2NG1fTVFMaw?oc=5` },
+    ],
+    body: `Bitcoin steigt über $80.000 als weicher Dollar, Debasement fürchtet Momentum zu steigern.
+
+Quellen: Investing.com, Reuters.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-25-neue-installationen-entstehen-auf-insel-wahrend-china-den-au`,
     date: `2026-08-25`,
     tag: `Update`,
