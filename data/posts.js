@@ -12,6 +12,23 @@
 
 const POSTS = [
   {
+    slug: `2026-08-26-china-kritisiert-angedrohte-us-sanktionen-gegen-irans-handel`,
+    date: `2026-08-26`,
+    tag: `Update`,
+    title: `China kritisiert angedrohte US-Sanktionen gegen Irans Handelspartner`,
+    excerpt: `Um Iran finanziell weiter zu schwächen, drohen die USA nun den Handelspartnern des Landes und verlangen von ihnen, jegliche Geschäfte mit Iran einzustellen.`,
+    assets: [],
+    sources: [
+      { name: `Tagesschau (ARD)`, url: `https://www.tagesschau.de/ausland/asien/usa-sanktionen-iran-handelspartner-100.html` },
+      { name: `Reuters`, url: `https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZm9YU2tWOHlXZ2tpVEl0VHFJcHVZVnVYNHp4UkFEWTJqVnRmTG04ZzJoc09jT0U5VTdlaXlLX1pGLVMxdnI3a1ZLTHVmckhOVDRvU0Vld3N3Q0ozbllqWUR2TTJJUFdNTWVXS2dGT3BnVDk1YUVORzlUTXFGRXZ2cWt3SmtoTGZnMzlDWVBtUGxaNEVEY3VaVGxabEdmbkd1c0JKZ3QzT2xDOVRyQlZZUHBwMVAxbjFt?oc=5` },
+    ],
+    body: `Um Iran finanziell weiter zu schwächen, drohen die USA nun den Handelspartnern des Landes und verlangen von ihnen, jegliche Geschäfte mit Iran einzustellen. China - der größte Handelspartner Irans - droht bereits mit Gegenmaßnahmen.
+
+Quellen: Reuters, Tagesschau (ARD).
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-25-bitcoin-nimmt-einen-beat-nach-debasement-handel-funken-am-be`,
     date: `2026-08-25`,
     tag: `Update`,
