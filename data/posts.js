@@ -12,6 +12,23 @@
 
 const POSTS = [
   {
+    slug: `2026-08-26-wall-street-sieht-gedampfte-sitzung-inmitten-gemischter-pce`,
+    date: `2026-08-26`,
+    tag: `Update`,
+    title: `Wall Street sieht gedämpfte Sitzung inmitten gemischter PCE-Daten, Vorsicht vor Nvidia-Test`,
+    excerpt: `Wall Street taucht auf heißen Inflationsdaten vor dem Nvidia-Ergebnis.`,
+    assets: [],
+    sources: [
+      { name: `Investing.com`, url: `https://www.investing.com/news/stock-market-news/us-stock-futures-fall-as-investors-await-pce-inflation-nvidia-results-4876105` },
+      { name: `Reuters`, url: `https://news.google.com/rss/articles/CBMiqwFBVV95cUxNV3N4UlJubUVvNndNbHlFSTFtWlpoek1URGE5c3J4SDJEYlZ2aWYzaUNRWDluMnRua19BSENVRWdZZEFzZEh0VWFINF9Va3RPYVEtamhja1Rud3hVUFFWQUZBS1JlWE5wMk0yZUEyQ3lpV3pETVRMMnUxLWZ4Rm92OGZmVGpjY3BVZXl1dDBrR3RtX3RWZG9DOEFEMzFlV2NRSTVKYkxQb0hCZU0?oc=5` },
+    ],
+    body: `Wall Street taucht auf heißen Inflationsdaten vor dem Nvidia-Ergebnis.
+
+Quellen: Investing.com, Reuters.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-26-russland-wiegt-ballistische-raketenschlage-auf-kyiv-als-frie`,
     date: `2026-08-26`,
     tag: `Breaking`,
