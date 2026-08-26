@@ -12,6 +12,23 @@
 
 const POSTS = [
   {
+    slug: `2026-08-26-ein-3-token-bewegung-loste-gerade-36-millionen-in-ethereum-d`,
+    date: `2026-08-26`,
+    tag: `Marktbeobachtung`,
+    title: `Ein 3%-Token-Bewegung löste gerade $36 Millionen in Ethereum DeFi Liquidationen aus`,
+    excerpt: `Tom Lees BitMine kauft 81 Millionen Dollar in Ethereum, da ETH 2.500 Dollar erreicht.`,
+    assets: [],
+    sources: [
+      { name: `CoinDesk`, url: `https://www.coindesk.com/tech/2026/08/25/a-3-token-move-just-triggered-usd36-million-in-ethereum-defi-liquidations` },
+      { name: `Yahoo Finance`, url: `https://finance.yahoo.com/markets/crypto/articles/tom-lee-bitmine-buys-81-163530767.html` },
+    ],
+    body: `Tom Lees BitMine kauft 81 Millionen Dollar in Ethereum, da ETH 2.500 Dollar erreicht.
+
+Quellen: CoinDesk, Yahoo Finance.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-26-super-micro-sinks-7-als-taiwan-indicts-mitarbeiter-uber-ille`,
     date: `2026-08-26`,
     tag: `Update`,
