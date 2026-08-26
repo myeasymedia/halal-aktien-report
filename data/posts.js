@@ -12,6 +12,24 @@
 
 const POSTS = [
   {
+    slug: `2026-08-26-russland-wiegt-ballistische-raketenschlage-auf-kyiv-als-frie`,
+    date: `2026-08-26`,
+    tag: `Breaking`,
+    title: `Russland wiegt ballistische Raketenschläge auf Kyiv als Friedensgespräche Kollaps`,
+    excerpt: `Russland bereitet die Ukraine Eskalation als Gesprächszusammenbruch vor - Bericht. Ukraine, Russland Handel Streiks; Wildbeeren Website erneut getroffen.`,
+    assets: [],
+    sources: [
+      { name: `Investing.com`, url: `https://www.investing.com/news/economy-news/russia-weighs-ballistic-missile-strikes-on-kyiv-as-peace-talks-collapse-4877618` },
+      { name: `Seeking Alpha`, url: `https://seekingalpha.com/news/4637091-russia-prepares-ukraine-escalation-as-talks-collapse---report?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news` },
+      { name: `Deutsche Welle (DW)`, url: `https://www.dw.com/en/ukraine-russia-trade-strikes-wildberries-site-hit-again/a-78408178?maca=en-rss-en-all-1573-rdf` },
+    ],
+    body: `Russland bereitet die Ukraine Eskalation als Gesprächszusammenbruch vor - Bericht. Ukraine, Russland Handel Streiks; Wildbeeren Website erneut getroffen.
+
+Quellen: Deutsche Welle (DW), Investing.com, Seeking Alpha.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-26-deutschland-blitzproduktion-pmi-steigt-auf-4-monatshoch-von`,
     date: `2026-08-26`,
     tag: `Update`,
