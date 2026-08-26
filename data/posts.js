@@ -12,6 +12,26 @@
 
 const POSTS = [
   {
+    slug: `2026-08-26-wall-street-macht-es-leichter-bitcoinwale-selbst-zu-ditchen`,
+    date: `2026-08-26`,
+    tag: `Update`,
+    title: `Wall Street macht es leichter, Bitcoinwale selbst zu ditchen: Bericht`,
+    excerpt: `Was für ein geteiltes Fed für Investoren bedeutet. Wall Street hat einen klaren Rückzug aus dem Entscheidung der Federal Reserve: Eine Wanderung ist wahrscheinlich am Horizont.`,
+    assets: [],
+    sources: [
+      { name: `CoinDesk`, url: `https://www.coindesk.com/markets/2026/08/26/E` },
+      { name: `CNBC Markets`, url: `https://www.cnbc.com/2026/07/29/fed-meeting-interest-rates-warsh-stocks-bonds.html` },
+      { name: `CNBC Investing`, url: `https://www.cnbc.com/2026/08/23/top-analysts-believe-in-the-growth-potential-of-these-3-stocks.html` },
+      { name: `Reuters`, url: `https://news.google.com/rss/articles/CBMirgFBVV95cUxOdmhxOE10Q2J5RzR6U1lxZjRCX0FUYmdxdkl5SE5fT1N2SG5RSmMxb0xPekZ2eDNjbVhyVE54N0FIOTByZEdrMFUtSmp0U3A0R2RLVldRczJ2aW5PU2QzUzZ6Y0FYUThQU01jdEJOdzdtbndvdThwXzhUbDAzQ2lHeVIwbHE4dkZITlhxZ0JLLWVEVHdzZmcxYTdub3dWRjh1QnRNUzRhU0V3bnJZV2c?oc=5` },
+      { name: `Yahoo Finance`, url: `https://finance.yahoo.com/markets/article/wall-street-is-rotating-out-of-2026s-biggest-winners-chart-of-the-day-180639239.html` },
+    ],
+    body: `Was für ein geteiltes Fed für Investoren bedeutet. Wall Street hat einen klaren Rückzug aus dem Entscheidung der Federal Reserve: Eine Wanderung ist wahrscheinlich am Horizont.
+
+Quellen: CNBC Investing, CNBC Markets, CoinDesk, Reuters, Yahoo Finance.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-26-dick-s-sporting-senkt-prognosen-da-die-schwache-nachfrage-na`,
     date: `2026-08-26`,
     tag: `Update`,
