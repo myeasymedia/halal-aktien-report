@@ -12,6 +12,24 @@
 
 const POSTS = [
   {
+    slug: `2026-08-26-asiatische-aktien-als-olrutschen-nvidia-ergebnis-loom-thai-r`,
+    date: `2026-08-26`,
+    tag: `Update`,
+    title: `Asiatische Aktien als Ölrutschen, Nvidia Ergebnis loom; Thai Rate Entscheidung fällig`,
+    excerpt: `Die Bestände, die tendenziell mit Nvidia-Quartalszahlen zu bewegen, und die, die nicht. Nvidia-Ergebnisse sind zu einem Marktereignis geworden, das über den Chipmaker selbst hinausreißen kann.`,
+    assets: [],
+    sources: [
+      { name: `Investing.com`, url: `https://www.investing.com/news/stock-market-news/asian-stocks-rebound-as-oil-slides-nvidia-earnings-loom-thai-rate-decision-due-4876256` },
+      { name: `CNBC Investing`, url: `https://www.cnbc.com/2026/08/25/the-stocks-that-tend-to-move-with-nvidia-earnings-and-the-ones-that-dont.html` },
+      { name: `Reuters`, url: `https://news.google.com/rss/articles/CBMie0FVX3lxTE91T2JHeEdCeW1LQUVJbHFFd0lzWkxUXzZjUWZodDZET0tTdWZYbEtpWnpPNGRsNzRZSjF1dUs5ZWNDV0t0a3F6YlBCdWJWTlRKc2F6NVV3T3ltWWl6Um9tbFlvVWRIZDk1dHFpNU5aUFo0UGVibk10NFE5dw?oc=5` },
+    ],
+    body: `Die Bestände, die tendenziell mit Nvidia-Quartalszahlen zu bewegen, und die, die nicht. Nvidia-Ergebnisse sind zu einem Marktereignis geworden, das über den Chipmaker selbst hinausreißen kann.
+
+Quellen: CNBC Investing, Investing.com, Reuters.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-26-ein-3-token-bewegung-loste-gerade-36-millionen-in-ethereum-d`,
     date: `2026-08-26`,
     tag: `Marktbeobachtung`,
