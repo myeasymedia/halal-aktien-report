@@ -12,6 +12,23 @@
 
 const POSTS = [
   {
+    slug: `2026-08-26-xrps-44-rallye-bringt-hebel-zuruck-und-erhoht-das-risiko-ein`,
+    date: `2026-08-26`,
+    tag: `Marktbeobachtung`,
+    title: `XRPs 44% Rallye bringt Hebel zurück und erhöht das Risiko einer schärferen Pullback`,
+    excerpt: `XRP führt Crypto Pullback als Leverage Unwind Tests Rally.`,
+    assets: [],
+    sources: [
+      { name: `CoinDesk`, url: `https://www.coindesk.com/markets/2026/08/26/xrp-s-44-rally-brings-leverage-back-raising-risk-of-sharper-pullback` },
+      { name: `Yahoo Finance`, url: `https://finance.yahoo.com/markets/crypto/articles/xrp-leads-crypto-pullback-leverage-152949262.html` },
+    ],
+    body: `XRP führt Crypto Pullback als Leverage Unwind Tests Rally.
+
+Quellen: CoinDesk, Yahoo Finance.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-26-die-zinssatze-mussen-bei-inflationsrisiken-weiter-steigen-sa`,
     date: `2026-08-26`,
     tag: `Update`,
