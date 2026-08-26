@@ -12,6 +12,23 @@
 
 const POSTS = [
   {
+    slug: `2026-08-26-die-inflation-der-japanischen-unternehmensdienstleistungen-b`,
+    date: `2026-08-26`,
+    tag: `Marktbeobachtung`,
+    title: `Die Inflation der japanischen Unternehmensdienstleistungen beschleunigt im Juli`,
+    excerpt: `KIs kostspieliger Aufbau erschwert den Inflationskampf der Fed. Tech-Führer sagen, KI wird die Kosten senken.`,
+    assets: [],
+    sources: [
+      { name: `Investing.com`, url: `https://www.investing.com/news/economy-news/japans-corporate-services-inflation-accelerates-in-july-4876077` },
+      { name: `CNBC Markets`, url: `https://www.cnbc.com/2026/08/12/ais-costly-buildout-complicates-the-feds-inflation-fight.html` },
+    ],
+    body: `KIs kostspieliger Aufbau erschwert den Inflationskampf der Fed. Tech-Führer sagen, KI wird die Kosten senken.
+
+Quellen: CNBC Markets, Investing.com.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-26-china-kritisiert-angedrohte-us-sanktionen-gegen-irans-handel`,
     date: `2026-08-26`,
     tag: `Update`,
