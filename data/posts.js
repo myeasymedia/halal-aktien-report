@@ -12,6 +12,23 @@
 
 const POSTS = [
   {
+    slug: `2026-08-26-dick-s-sporting-senkt-prognosen-da-die-schwache-nachfrage-na`,
+    date: `2026-08-26`,
+    tag: `Update`,
+    title: `Dick's Sporting senkt Prognosen, da die schwache Nachfrage nach Sneakern Foot Locker ins Wanken bringt und die Aktien einbrechen`,
+    excerpt: `Die Aktie von Dick's Sporting Goods fällt um 30 %, da der Einzelhändler die Erwartungen verfehlt und den Schuhmarkt als „herausfordernd“ bezeichnet.`,
+    assets: [],
+    sources: [
+      { name: `Reuters`, url: `https://news.google.com/rss/articles/CBMitgFBVV95cUxObnFJT091TklEYjMxRW9LRVAzcW15eUQyR1hZVzlhdFJvLVVEMC1KSnIyRno1c3BCMVU1TzdDQjdoZXViYkRmUW56OF9DbjFOa3Z0Qy1ucU9CTkZiVE53NVZqTUNRSExPMGFSYUlITFc2SmEzeE5EVUt4YzdBODlfSExmdUd6Z0FTU3VINWJwWXFXOWduWkJtN1J4Z2xxbmJETWZMRFVoUEpxYWpGWjJWV25ibV91QQ?oc=5` },
+      { name: `CNBC Business`, url: `https://www.cnbc.com/2026/08/25/dicks-sporting-goods-dks-earnings-q2-2026.html` },
+    ],
+    body: `Die Aktie von Dick's Sporting Goods fällt um 30 %, da der Einzelhändler die Erwartungen verfehlt und den Schuhmarkt als „herausfordernd“ bezeichnet. Dick's Sporting Goods meldete am Dienstag Gewinne für das zweite Geschäftsquartal, die in einem von ihr als „herausfordernd“ bezeichneten Umfeld die Erwartungen der Wall Street verfehlten.
+
+Quellen: CNBC Business, Reuters.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-26-asiatische-aktien-als-olrutschen-nvidia-ergebnis-loom-thai-r`,
     date: `2026-08-26`,
     tag: `Update`,
