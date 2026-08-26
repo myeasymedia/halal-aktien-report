@@ -12,6 +12,23 @@
 
 const POSTS = [
   {
+    slug: `2026-08-26-deutschland-blitzproduktion-pmi-steigt-auf-4-monatshoch-von`,
+    date: `2026-08-26`,
+    tag: `Update`,
+    title: `Deutschland Blitzproduktion PMI steigt auf 4-Monatshoch von 43.2`,
+    excerpt: `Deutschland: Wie die Temperaturen steigen, auch der Klimaskeptizismus. Einige 98% der aktiven Klimawissenschaftler sagen, dass der Klimawandel passiert, und ist man-made.`,
+    assets: [],
+    sources: [
+      { name: `MarketWatch (Realtime)`, url: `https://www.marketwatch.com/story/germany-flash-manufacturing-pmi-rises-to-4-month-high-of-43-2-b9e50a64?mod=mw_rss_realtimeheadlines` },
+      { name: `Deutsche Welle (DW)`, url: `https://www.dw.com/en/germany-as-temperatures-rise-so-does-climate-skepticism/a-78206354?maca=en-rss-en-all-1573-rdf` },
+    ],
+    body: `Deutschland: Wie die Temperaturen steigen, auch der Klimaskeptizismus. Einige 98% der aktiven Klimawissenschaftler sagen, dass der Klimawandel passiert, und ist man-made.
+
+Quellen: Deutsche Welle (DW), MarketWatch (Realtime).
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-26-xrps-44-rallye-bringt-hebel-zuruck-und-erhoht-das-risiko-ein`,
     date: `2026-08-26`,
     tag: `Marktbeobachtung`,
