@@ -12,6 +12,23 @@
 
 const POSTS = [
   {
+    slug: `2026-08-26-super-micro-sinks-7-als-taiwan-indicts-mitarbeiter-uber-ille`,
+    date: `2026-08-26`,
+    tag: `Update`,
+    title: `Super Micro Sinks 7% als Taiwan Indicts Mitarbeiter über illegale AI Server Exporte nach China, Dell Slips`,
+    excerpt: `XPeng Sinks 7% als Q2 Miss Overshadows $6.3B Robotics Valuation, NIO Drops 4%, Tesla Slips. Taiwan lädt neun Menschen zum Schmuggeln von „high-end“ KI-Servern nach China ein.`,
+    assets: [],
+    sources: [
+      { name: `Yahoo Finance`, url: `https://finance.yahoo.com/technology/ai/articles/super-micro-sinks-7-taiwan-144106910.html` },
+      { name: `The Guardian`, url: `https://www.theguardian.com/technology/2026/aug/25/taiwan-china-ai-smugglers` },
+    ],
+    body: `XPeng Sinks 7% als Q2 Miss Overshadows $6.3B Robotics Valuation, NIO Drops 4%, Tesla Slips. Taiwan lädt neun Menschen zum Schmuggeln von „high-end“ KI-Servern nach China ein.
+
+Quellen: The Guardian, Yahoo Finance.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-26-die-inflation-der-japanischen-unternehmensdienstleistungen-b`,
     date: `2026-08-26`,
     tag: `Marktbeobachtung`,
