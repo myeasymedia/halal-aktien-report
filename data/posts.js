@@ -12,6 +12,23 @@
 
 const POSTS = [
   {
+    slug: `2026-08-26-die-zinssatze-mussen-bei-inflationsrisiken-weiter-steigen-sa`,
+    date: `2026-08-26`,
+    tag: `Update`,
+    title: `Die Zinssätze müssen bei Inflationsrisiken weiter steigen, sagt die EZB Bloomberg`,
+    excerpt: `Meta, US-Staaten haben über die Einrichtung von teen Social Media Schaden Fall diskutiert, Bloomberg Nachrichten berichtet.`,
+    assets: [],
+    sources: [
+      { name: `Reuters`, url: `https://news.google.com/rss/articles/CBMitgFBVV95cUxNQi02STdIUDVtTjdzeFJKc3hzNU9Fd0VtZmpWcGFoMngwMmR4VWVTSFc1U0ZwUGxQWUFpcDdQWV9HVlJEakd1cU14a1hpVHRPN25ocEtYb29wN0pmVDRKcFhXbTF3dEJ3U0hWVGpUTE5oV3BFeWF6Y3BpSmxHWXRKV2g1WnhRdEhETG5nOUZfUjViaEFJLVdIbF85Q2ptbTVyWmg5b0NFRnk3WEFhYVV3ejZJS29OZw?oc=5` },
+      { name: `Yahoo Finance`, url: `https://finance.yahoo.com/economy/policy/articles/us-rates-rise-soon-absent-150621599.html` },
+    ],
+    body: `Meta, US-Staaten haben über die Einrichtung von teen Social Media Schaden Fall diskutiert, Bloomberg Nachrichten berichtet. Die US-Raten müssen bald abschreckende Beweise für den anhaltenden Inflationsrückgang erheben, sagt Fed's Collins.
+
+Quellen: Reuters, Yahoo Finance.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-26-wall-street-macht-es-leichter-bitcoinwale-selbst-zu-ditchen`,
     date: `2026-08-26`,
     tag: `Update`,
