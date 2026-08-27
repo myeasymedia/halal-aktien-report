@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-27-nvidia-fugt-442-milliarden-us-dollar-im-zweitgroten-aktienan`,
+    date: `2026-08-27`,
+    tag: `Marktbeobachtung`,
+    title: `Nvidia fügt 442 Milliarden US-Dollar im zweitgrößten Aktienanstieg aller Zeiten hinzu`,
+    excerpt: `Nvidia Corp. steigerte am Donnerstag seinen Marktwert um 442 Milliarden US-Dollar, was den zweitgrößten Tagesgewinn aller Aktien in der Geschichte darstellt.`,
+    assets: [],
+    sources: [
+      { name: `Bloomberg`, url: `https://www.bloomberg.com/news/articles/2026-08-27/nvidia-adds-442-billion-in-second-biggest-ever-stock-surge` },
+    ],
+    body: `Nvidia Corp. steigerte am Donnerstag seinen Marktwert um 442 Milliarden US-Dollar, was den zweitgrößten Tagesgewinn aller Aktien in der Geschichte darstellt.
+
+Quelle: Bloomberg.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-27-grobritannien-plant-ein-neues-ziel-der-bank-of-england-fur-s`,
     date: `2026-08-27`,
     tag: `Marktbeobachtung`,
