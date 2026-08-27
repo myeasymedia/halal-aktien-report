@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-27-fed-sah-etwas-wahrscheinlicher-nach-inflationsdaten-zu-erhoh`,
+    date: `2026-08-27`,
+    tag: `Marktbeobachtung`,
+    title: `Fed sah etwas wahrscheinlicher nach Inflationsdaten zu erhöhen`,
+    excerpt: ``,
+    assets: [],
+    sources: [
+      { name: `Reuters`, url: `https://news.google.com/rss/articles/CBMimwFBVV95cUxQanFlNHU1aU9hbFVoM2VlS21qMXlfNzBLVU1HM3VrdnhQUHJka2pfUThVeUx5dk9ubGEwU01NWml0VWNzcVMyTDRzdFVLMW5BWXA2QkFweUtPcXNObVFNQUFGcUx4WnQ4b2RtRFBjZ0hnb3FMdWVGQUpWVXoyNXVwN1lSMDRPSFVoWVFBM1BSQ0psQWdrb1pWYzJzMA?oc=5` },
+    ],
+    body: `
+
+Quelle: Reuters.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-27-bitcoin-s-makro-fall-starkt-auch-da-regulierung-einen-rucksi`,
     date: `2026-08-27`,
     tag: `Marktbeobachtung`,
