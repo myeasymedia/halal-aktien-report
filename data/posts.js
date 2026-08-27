@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-27-boliden-erwirbt-mehrheitsbeteiligung-an-nexa-im-rahmen-eines`,
+    date: `2026-08-27`,
+    tag: `Marktbeobachtung`,
+    title: `Boliden erwirbt Mehrheitsbeteiligung an Nexa im Rahmen eines 1,3-Milliarden-Dollar-Deals`,
+    excerpt: `Die schwedische Bergbaugruppe Boliden AB hat vereinbart, die Beteiligung der Votorantim SA an der Nexa Resources SA zu erwerben, die Kontrolle über den Zink- und Silberproduzenten zu übernehmen und den Betrieb in Brasilien und Peru zu erweitern.`,
+    assets: [],
+    sources: [
+      { name: `Bloomberg`, url: `https://www.bloomberg.com/news/articles/2026-08-27/boliden-to-buy-controlling-stake-in-nexa-in-1-3-billion-deal` },
+    ],
+    body: `Die schwedische Bergbaugruppe Boliden AB hat vereinbart, die Beteiligung der Votorantim SA an der Nexa Resources SA zu erwerben, die Kontrolle über den Zink- und Silberproduzenten zu übernehmen und den Betrieb in Brasilien und Peru zu erweitern.
+
+Quelle: Bloomberg.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-27-debasement-trade-um-bitcoin-in-drei-jahren-auf-300-000-zu-ne`,
     date: `2026-08-27`,
     tag: `Marktbeobachtung`,
