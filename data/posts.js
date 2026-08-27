@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-27-russland-sagt-es-konnte-als-reaktion-auf-ukrainische-angriff`,
+    date: `2026-08-27`,
+    tag: `Marktbeobachtung`,
+    title: `Russland sagt, es könnte als Reaktion auf ukrainische Angriffe mit britischen Raketen britische Militärziele angreifen`,
+    excerpt: ``,
+    assets: [],
+    sources: [
+      { name: `Reuters`, url: `https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQVB4M2NDa28tblBTTVZjdGtZb3d5MGtYMURzeDBCYmVqYjRxbzEzOHh3aFpRRUpIdDl2RW5scE5USEIwOWQ4eXZYWmV6dEN2aG9Uc2VfY0dkRTBxb28yYXFqYkhJeFU2aGJxaTdWR1gwVXZNejdXaXZScjdPTlk5NDFFWXlBNW1NQUR4M2pqQVNkNzFXZWxOOVFsQUVLT0EyeHFjNF84Z3lGQzN1X1dNTGtwc3luOThCLUV4eDR5alBwT2F5VmhLeA?oc=5` },
+    ],
+    body: `
+
+Quelle: Reuters.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-27-boliden-erwirbt-mehrheitsbeteiligung-an-nexa-im-rahmen-eines`,
     date: `2026-08-27`,
     tag: `Marktbeobachtung`,
