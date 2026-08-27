@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-27-gold-konsolidiert-uber-4-600-als-investoren-wiege-fed-rate-p`,
+    date: `2026-08-27`,
+    tag: `Marktbeobachtung`,
+    title: `Gold konsolidiert über $4,600 als Investoren Wiege Fed Rate Path`,
+    excerpt: `Gold konsolidierte über $4,600 eine Unze, als Investoren den Ansatz der Federal Reserve zur hartnäckigen Inflation vor dem jährlichen Jackson Hole Treffen in dieser Woche gewogen.`,
+    assets: [],
+    sources: [
+      { name: `Bloomberg`, url: `https://www.bloomberg.com/news/articles/2026-08-26/gold-consolidates-above-4-600-as-investors-weigh-fed-rate-path` },
+    ],
+    body: `Gold konsolidierte über $4,600 eine Unze, als Investoren den Ansatz der Federal Reserve zur hartnäckigen Inflation vor dem jährlichen Jackson Hole Treffen in dieser Woche gewogen.
+
+Quelle: Bloomberg.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-26-wall-street-sieht-gedampfte-sitzung-inmitten-gemischter-pce`,
     date: `2026-08-26`,
     tag: `Update`,
