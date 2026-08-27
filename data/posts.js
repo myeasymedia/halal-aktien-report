@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-27-walmart-stock-tubles-9-nach-ausblick-enttauscht-wall-street`,
+    date: `2026-08-27`,
+    tag: `Marktbeobachtung`,
+    title: `Walmart Stock-Tubles 9% nach Ausblick enttäuscht Wall Street`,
+    excerpt: `Walmart wird voraussichtlich am Donnerstag seinen zweiten Quartalsverdienst melden und den Verbraucher und die K-förmige Wirtschaft lesen.`,
+    assets: [],
+    sources: [
+      { name: `CNBC Business`, url: `https://www.cnbc.com/2026/08/20/walmart-wmt-q2-2027-earnings.html` },
+    ],
+    body: `Walmart wird voraussichtlich am Donnerstag seinen zweiten Quartalsverdienst melden und den Verbraucher und die K-förmige Wirtschaft lesen.
+
+Quelle: CNBC Business.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-27-china-braucht-us-dollar-aber-baut-eine-hecke-gegen-washingto`,
     date: `2026-08-27`,
     tag: `Marktbeobachtung`,
