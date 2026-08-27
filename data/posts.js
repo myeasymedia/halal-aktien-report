@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-27-sudafrikanische-bergleute-erholen-sich-erneut-und-stehen-vor`,
+    date: `2026-08-27`,
+    tag: `Marktbeobachtung`,
+    title: `Südafrikanische Bergleute erholen sich erneut und stehen vor dem besten Monat aller Zeiten`,
+    excerpt: `Ein Maß für die Rendite südafrikanischer Edelmetallbergbauaktien ist auf dem Weg zu seinem größten monatlichen Anstieg seit mindestens zwei Jahrzehnten, da sich die Gold- und Platinpreise von einem starken Einbruch erholen.`,
+    assets: [],
+    sources: [
+      { name: `Bloomberg`, url: `https://www.bloomberg.com/news/articles/2026-08-27/south-african-miners-are-rallying-again-set-for-best-month-ever` },
+    ],
+    body: `Ein Maß für die Rendite südafrikanischer Edelmetallbergbauaktien ist auf dem Weg zu seinem größten monatlichen Anstieg seit mindestens zwei Jahrzehnten, da sich die Gold- und Platinpreise von einem starken Einbruch erholen.
+
+Quelle: Bloomberg.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-27-russland-sagt-es-konnte-als-reaktion-auf-ukrainische-angriff`,
     date: `2026-08-27`,
     tag: `Marktbeobachtung`,
