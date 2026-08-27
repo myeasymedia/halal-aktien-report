@@ -12,6 +12,23 @@
 
 const POSTS = [
   {
+    slug: `2026-08-27-grobritannien-plant-ein-neues-ziel-der-bank-of-england-fur-s`,
+    date: `2026-08-27`,
+    tag: `Marktbeobachtung`,
+    title: `Großbritannien plant ein neues Ziel der Bank of England für Stablecoins`,
+    excerpt: `Die Bank of England plant ein neues Innovationsmandat für Stablecoins.`,
+    assets: [],
+    sources: [
+      { name: `CoinDesk`, url: `https://www.coindesk.com/policy/2026/08/27/britain-plans-new-bank-of-england-objective-for-stablecoins` },
+      { name: `Cointelegraph`, url: `https://cointelegraph.com/news/uk-boe-innovation-mandate-stablecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound` },
+    ],
+    body: `Die Bank of England plant ein neues Innovationsmandat für Stablecoins. Das Vereinigte Königreich plant, den Aufgabenbereich der Bank of England auszuweiten, um Innovationen im digitalen Zahlungsverkehr, einschließlich Stablecoins, zu unterstützen und dabei die Finanzstabilität an erster Stelle zu halten.
+
+Quellen: CoinDesk, Cointelegraph.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-27-sudafrikanische-bergleute-erholen-sich-erneut-und-stehen-vor`,
     date: `2026-08-27`,
     tag: `Marktbeobachtung`,
