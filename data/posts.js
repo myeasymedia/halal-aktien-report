@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-27-bitcoin-s-makro-fall-starkt-auch-da-regulierung-einen-rucksi`,
+    date: `2026-08-27`,
+    tag: `Marktbeobachtung`,
+    title: `Bitcoin's Makro-Fall stärkt auch, da Regulierung einen Rücksitz nimmt, sagt BlackRocks Digital Asset Head`,
+    excerpt: `Die jüngste Rallye des Flaggschiffs Kryptocurrency parallelisiert ihre Geschichte des Reboundings, wenn die Investoren-Stimulation zu anderen Assets kühlt, sagt BlackRocks Mitchnick.`,
+    assets: [],
+    sources: [
+      { name: `CNBC Investing`, url: `https://www.cnbc.com/2026/08/26/case-for-bitcoin-stronger-as-regulation-takes-back-seat-blackrock-says.html` },
+    ],
+    body: `Die jüngste Rallye des Flaggschiffs Kryptocurrency parallelisiert ihre Geschichte des Reboundings, wenn die Investoren-Stimulation zu anderen Assets kühlt, sagt BlackRocks Mitchnick.
+
+Quelle: CNBC Investing.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-27-fed-sah-etwas-wahrscheinlicher-nach-inflationsdaten-zu-erhoh`,
     date: `2026-08-27`,
     tag: `Marktbeobachtung`,
