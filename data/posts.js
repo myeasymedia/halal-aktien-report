@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-27-china-braucht-us-dollar-aber-baut-eine-hecke-gegen-washingto`,
+    date: `2026-08-27`,
+    tag: `Marktbeobachtung`,
+    title: `China braucht US-Dollar, aber baut eine Hecke gegen Washingtons Sanktionen`,
+    excerpt: `China braucht die USA.`,
+    assets: [],
+    sources: [
+      { name: `CNBC Markets`, url: `https://www.cnbc.com/2026/08/25/china-iran-us-sanctions-banks-cips.html` },
+    ],
+    body: `China braucht die USA.
+
+Quelle: CNBC Markets.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-27-debasement-trade-um-bitcoin-in-drei-jahren-auf-300-000-zu-ne`,
     date: `2026-08-27`,
     tag: `Marktbeobachtung`,
