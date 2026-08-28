@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-28-wall-st-week-ahead-jobs-bericht-broadcom-ergebnisse-stellen`,
+    date: `2026-08-28`,
+    tag: `Marktbeobachtung`,
+    title: `Wall St Week Ahead Jobs-Bericht: Broadcom-Ergebnisse stellen nächste Hürde für die Börsenrallye dar`,
+    excerpt: ``,
+    assets: [],
+    sources: [
+      { name: `Reuters`, url: `https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTjVfaWU5QkF5T0paRm0xSHdteDJHZjB1YTVMcmNZcjVWNHQzcWV2Rm1FaVd3RFN5OHFndERRRUljQ2dYMjhJQXdER21XMEJjQThvN0JONTRJNlpNUEt2V2xCWGtFdmJQcVMydi1MSEtDd1lsQVR4Q2ZYZDlldFI0VE5odDc3LVU1NDB5SlRQVlh3NWg4Tjl1Y2J0blJxczFyVUNmYlZ2b0hCZ1o1SzdiMFdEUHRfWlBWUTlCLVRtN3g?oc=5` },
+    ],
+    body: `
+
+Quelle: Reuters.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-28-hammack-der-fed-unterstutzt-zinserhohung-zur-eindammung-der`,
     date: `2026-08-28`,
     tag: `Marktbeobachtung`,
