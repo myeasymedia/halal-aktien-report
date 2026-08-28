@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-28-chinesische-nickelfirmen-in-indonesien-erwagen-produktionsku`,
+    date: `2026-08-28`,
+    tag: `Marktbeobachtung`,
+    title: `Chinesische Nickelfirmen in Indonesien erwägen Produktionskürzungen aufgrund niedriger Preise`,
+    excerpt: `Mehrere von chinesischen Firmen kontrollierte indonesische Nickelhütten erwägen koordinierte Produktionskürzungen bei einem wichtigen Batteriematerial, da der Druck auf die Rentabilität aufgrund schwacher Preise zunimmt, sagen mit der Angelegenheit vertraute Personen.`,
+    assets: [],
+    sources: [
+      { name: `Bloomberg`, url: `https://www.bloomberg.com/news/articles/2026-08-28/chinese-nickel-firms-in-indonesia-mull-output-cuts-on-low-prices` },
+    ],
+    body: `Mehrere von chinesischen Firmen kontrollierte indonesische Nickelhütten erwägen koordinierte Produktionskürzungen bei einem wichtigen Batteriematerial, da der Druck auf die Rentabilität aufgrund schwacher Preise zunimmt, sagen mit der Angelegenheit vertraute Personen.
+
+Quelle: Bloomberg.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-28-die-ukraine-gibt-an-eine-groe-russische-olraffinerie-in-jaro`,
     date: `2026-08-28`,
     tag: `Marktbeobachtung`,
