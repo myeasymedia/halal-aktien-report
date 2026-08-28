@@ -1836,3 +1836,26 @@ html.reveal-ready .reveal.in { opacity: 1; transform: none; }
 .stufen-hilfe { margin-top: 14px; font-size: 1.02rem; opacity: .92; }
 .stufen-hilfe em { font-style: normal; color: var(--accent, #5fe0a8); }
 .tier-fuss { margin: 12px 0 0; font-size: .82rem; opacity: .58; text-align: center; }
+
+/* Der 10.000-Euro-Block im Ausschnitt -- die ueberzeugendste Zahl der
+   Seite, weil sie ein Betrag ist und keine Prozentzahl. Steht dort ein
+   Minus, wird es genauso gezeigt: Das ist glaubwuerdiger als jedes
+   Gewinnversprechen und genau der Unterschied zu allen anderen. */
+.at-weg h4 { margin: 0 0 8px; font-size: .72rem; text-transform: uppercase;
+  letter-spacing: .06em; opacity: .55; font-weight: 600; }
+.at-zehnk { background: rgba(255,255,255,.045); border-radius: 14px;
+  padding: 16px 18px; margin-top: 18px; }
+.at-zehnk-zeile { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.at-zehnk-von { font-size: 1.05rem; opacity: .6; }
+.at-zehnk-pfeil { opacity: .45; }
+.at-zehnk-nach { font-size: 1.75rem; font-weight: 700; letter-spacing: -.02em; }
+.at-zehnk-nach.up { color: var(--accent, #5fe0a8); }
+.at-zehnk-nach.down { color: var(--rot, #ff6b6b); }
+.at-zehnk-hinweis { margin: 6px 0 0; font-size: .84rem; opacity: .68; line-height: 1.5; }
+.at-zehnk-hinweis strong { opacity: 1; }
+.at-schloss-titel { margin: 8px 0 8px; font-weight: 650; font-size: 1.08rem; }
+.at-schloss-fuss { margin: 12px 0 0; font-size: .78rem; opacity: .5; }
+@media (max-width: 720px) {
+  .at-zehnk-nach { font-size: 1.5rem; }
+  .at-zehnk { padding: 14px 15px; }
+}

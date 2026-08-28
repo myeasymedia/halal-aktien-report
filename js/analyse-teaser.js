@@ -2,19 +2,24 @@
  * -------------------
  * DER BLICK INS DASHBOARD -- fuer alle, die (noch) nicht drin sind.
  *
- * Auftrag vom 28.08.2026: "damit leute die auf der webseite sind das mal
- * sehen und das eventuell deren interessen weckt was das dashboard alles
- * kann und dann aber nur fuer vip mitglieder schoen provokant".
+ * Auftrag vom 28.08.2026: "dieses beispiel auf der webseite muss
+ * ueberzeugen von der analyse und von der verstaendlichkeit weil die
+ * webseite muss verkaufen am ende des tages".
  *
- * DER REIZ ENTSTEHT DURCH ECHTHEIT: Kurs, Verlauf und der erste halbe
- * Satz der Erklaerung sind die WIRKLICHEN Daten aus der Analyse dieser
- * Woche (data/analyse-teaser.js, taeglich erzeugt). Ausgedachte
- * Platzhalter wuerden genau das kaputtmachen -- man sieht ihnen an, dass
- * sie erfunden sind.
+ * DREI ENTSCHEIDUNGEN, DIE DAS TRAGEN:
  *
- * Alles Weitere liegt hinter dem Schloss, und daneben steht, WIE VIEL
- * dort liegt: "noch 2 Wirkungswege, 6 Kennzahlen, 12 weitere Werte".
- * Eine Zahl weckt mehr Neugier als ein leeres Versprechen.
+ * 1. ECHTE DATEN. Kurs, Verlauf und Erklaerung stammen aus der Analyse
+ *    dieser Woche. Erfundenen Zahlen sieht man an, dass sie erfunden
+ *    sind -- und damit waere der Beweis dahin.
+ *
+ * 2. EIN GEDANKE VOLLSTAENDIG. Die erste Fassung schnitt mitten im Wort
+ *    ab. Das zeigt den Stil, beweist aber nichts: Wer nicht weiss, ob
+ *    der Satz gut zu Ende geht, zahlt dafuer nicht. Verschlossen wird
+ *    die MENGE, nicht die Qualitaet.
+ *
+ * 3. AUCH DAS MINUS. Steht bei "aus 10.000 Euro wurden" ein kleinerer
+ *    Betrag, wird er genauso gezeigt. Das ist der glaubwuerdigste Satz
+ *    auf der ganzen Seite -- jeder andere Anbieter zeigt nur Gewinne.
  */
 (function () {
   "use strict";
@@ -51,72 +56,94 @@
     }).join(" ");
     return '<svg class="at-linie" viewBox="0 0 ' + B + ' ' + H + '" ' +
       'preserveAspectRatio="none" role="img" aria-label="Kursverlauf ' +
-      (d.name || "") + '">' +
+      (d.name || "") + ', ein Jahr">' +
       '<path d="' + pfad + " L" + B + " " + H + " L0 " + H + ' Z" fill="' + farbe +
       '" opacity=".12"/>' +
       '<path d="' + pfad + '" fill="none" stroke="' + farbe + '" stroke-width="2.5" ' +
       'vector-effect="non-scaling-stroke" stroke-linejoin="round"/></svg>';
   }
 
-  // Leere Kacheln weglassen -- eine Ueberschrift ohne Zahl darunter
-  // sieht aus, als fehlten Daten.
   function kacheln() {
     var felder = [["30d", "30 Tage"], ["90d", "90 Tage"], ["1y", "1 Jahr"]];
-    var vorhanden = felder.filter(function (f) {
+    var da = felder.filter(function (f) {
       var w = d.changes[f[0]];
       return w !== null && w !== undefined;
     });
-    if (!vorhanden.length) return "";
+    if (!da.length) return "";
     return '<div class="at-kacheln" style="grid-template-columns:repeat(' +
-      vorhanden.length + ',1fr)">' + vorhanden.map(function (f) {
+      da.length + ',1fr)">' + da.map(function (f) {
         return "<div><span>" + f[1] + "</span>" + prozent(d.changes[f[0]]) + "</div>";
       }).join("") + "</div>";
   }
 
-  // Ein/Mehrzahl richtig setzen -- "1 anstehende Termine" liest sich
-  // schludrig, und Schludrigkeit ist genau das Gegenteil dessen, was
-  // dieser Ausschnitt zeigen soll.
-  function anzahl(n, einzahl, mehrzahl) {
-    return n + " " + (n === 1 ? einzahl : mehrzahl);
+  // Der ueberzeugendste Block: ein Betrag statt einer Prozentzahl.
+  function zehntausend() {
+    var z = d.zehntausend;
+    if (!z || !z.ende) return "";
+    var runter = z.ende < 10000;
+    return '<div class="at-zehnk">' +
+      '<div class="at-zehnk-zeile">' +
+        '<span class="at-zehnk-von">10.000 €</span>' +
+        '<span class="at-zehnk-pfeil">→</span>' +
+        '<span class="at-zehnk-nach ' + (runter ? "down" : "up") + '">' +
+          zahl(z.ende, 0) + " €</span>" +
+      "</div>" +
+      '<p class="at-zehnk-hinweis">wären daraus in einem Jahr geworden' +
+      (runter
+        ? ". <strong>Auch das zeigen wir</strong> — wir rechnen vor, was war, " +
+          "nicht was sein könnte."
+        : ". Rückblickend gerechnet, ohne Gebühren und Steuern.") +
+      "</p></div>";
   }
 
   var v = d.verborgen || {};
+  function anzahl(n, ein, mehr) { return n + " " + (n === 1 ? ein : mehr); }
   var teile = [];
-  v.wirkungswege && teile.push(anzahl(v.wirkungswege,
-    "weiterer Wirkungsweg", "weitere Wirkungswege"));
+  v.wirkungswege && teile.push(anzahl(v.wirkungswege, "weiterer Wirkungsweg",
+                                       "weitere Wirkungswege"));
+  v.termine && teile.push(anzahl(v.termine, "anstehender Termin", "anstehende Termine"));
   v.kennzahlen && teile.push(anzahl(v.kennzahlen, "Kennzahl", "Kennzahlen"));
-  v.termine && teile.push(anzahl(v.termine,
-    "anstehender Termin", "anstehende Termine"));
-  v.bewegungen && teile.push("die größten Kursbewegungen");
-  var mehr = teile.join(" · ");
+  v.bewegungen && teile.push("die größten Kursbewegungen der letzten Jahre");
 
   wurzel.innerHTML =
     '<article class="at-karte">' +
-      '<div class="at-marke">Echte Analyse aus KW' + d.kw + ' — nicht nachgestellt</div>' +
+      '<div class="at-marke">Echte Analyse aus KW' + d.kw +
+        ' — nicht nachgestellt</div>' +
       '<div class="at-kopf">' +
-        '<div><h3>' + d.name + '</h3><span class="at-symbol">' + d.symbol + '</span></div>' +
+        '<div><h3>' + d.name + '</h3><span class="at-symbol">' + d.symbol +
+          "</span></div>" +
         '<div class="at-preis"><b>' + zahl(d.preis, 2) + '</b> <span>' +
-          (d.waehrung || "USD") + '</span></div>' +
-      '</div>' +
+          (d.waehrung || "USD") + "</span></div>" +
+      "</div>" +
       kacheln() +
       linie(d.verlauf) +
-      '<div class="at-weg">' +
-        '<span class="at-anlass">' + (d.anlass || "Wirkungsweg") + '</span>' +
-        '<p>' + (d.anriss || "") + '</p>' +
-      '</div>' +
+      (d.wirkungsweg
+        ? '<div class="at-weg"><h4>Was diesen Wert typischerweise bewegt</h4>' +
+          '<span class="at-anlass">' + (d.anlass || "") + "</span>" +
+          "<p>" + d.wirkungsweg + "</p></div>"
+        : "") +
+      zehntausend() +
       '<div class="at-schloss">' +
         '<div class="at-schloss-inner">' +
-          '<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">' +
+          '<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">' +
             '<path fill="currentColor" d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5Zm-3 5a3 3 0 1 1 6 0v3H9V6Z"/>' +
-          '</svg>' +
-          '<p class="at-schloss-titel">Hier geht es weiter — für VIP-Mitglieder</p>' +
-          (mehr ? '<p class="at-schloss-mehr">' + mehr + '</p>' : "") +
-          (v.weitere_werte ? '<p class="at-schloss-mehr">und ' +
-            anzahl(v.weitere_werte, "weiterer Wert", "weitere Werte") +
-            ', jede Woche neu</p>' : "") +
-          (d.cta ? '<a class="btn btn-primary at-schloss-btn" href="' + d.cta +
-            '" rel="noopener">VIP beitreten</a>' : "") +
-        '</div>' +
-      '</div>' +
-    '</article>';
+          "</svg>" +
+          '<p class="at-schloss-titel">Das war ein Ausschnitt.</p>' +
+          (teile.length
+            ? '<p class="at-schloss-mehr">Zu diesem Wert kommen noch ' +
+              teile.join(" · ") + " dazu."
+            : "") +
+          (v.weitere_werte
+            ? '<p class="at-schloss-mehr">Dazu ' +
+              anzahl(v.weitere_werte, "weiterer Wert", "weitere Werte") +
+              " — Gold, Aktien, Krypto. <strong>Jeden Sonntag neu.</strong></p>"
+            : "") +
+          (d.cta
+            ? '<a class="btn btn-primary at-schloss-btn" href="' + d.cta +
+              '" rel="noopener">Alle Analysen ansehen — VIP</a>'
+            : "") +
+          '<p class="at-schloss-fuss">39,99 € im Monat · monatlich kündbar</p>' +
+        "</div>" +
+      "</div>" +
+    "</article>";
 })();
