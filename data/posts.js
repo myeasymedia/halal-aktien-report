@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-28-hammack-der-fed-unterstutzt-zinserhohung-zur-eindammung-der`,
+    date: `2026-08-28`,
+    tag: `Marktbeobachtung`,
+    title: `Hammack der Fed unterstützt Zinserhöhung zur Eindämmung der Inflation`,
+    excerpt: `Zinssätze seien „das klarste, transparenteste und am einfachsten zu kommunizierende Instrument, das wir haben“, sagt Beth Hammock, Präsidentin der Cleveland Fed, und fügt hinzu, dass es eine lange Geschichte gibt, die die Auswirkungen von Zinsbewegungen auf die Wirtschaft zeigt.`,
+    assets: [],
+    sources: [
+      { name: `Bloomberg`, url: `https://www.bloomberg.com/news/videos/2026-08-28/fed-s-hammack-backs-rate-hike-to-rein-in-inflation-video` },
+    ],
+    body: `Zinssätze seien „das klarste, transparenteste und am einfachsten zu kommunizierende Instrument, das wir haben“, sagt Beth Hammock, Präsidentin der Cleveland Fed, und fügt hinzu, dass es eine lange Geschichte gibt, die die Auswirkungen von Zinsbewegungen auf die Wirtschaft zeigt. Sie sprach mit Tom Keene, Lisa Abramowicz und Michael McKee von Bloomberg in Jackson Hole, Wyoming.
+
+Quelle: Bloomberg.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-28-iran-krieg-hamsterkaufe-in-teheran-lange-schlangen-an-tankst`,
     date: `2026-08-28`,
     tag: `Marktbeobachtung`,
