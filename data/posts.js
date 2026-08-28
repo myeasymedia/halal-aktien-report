@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-28-iran-krieg-hamsterkaufe-in-teheran-lange-schlangen-an-tankst`,
+    date: `2026-08-28`,
+    tag: `Marktbeobachtung`,
+    title: `Iran-Krieg: Hamsterkäufe in Teheran: Lange Schlangen an Tankstellen`,
+    excerpt: `In der iranischen Hauptstadt Teheran warten plötzlich Autofahrer auch um 2.00 Uhr nachts auf Benzin. Die Regierung weist die Sorgen zurück.`,
+    assets: [],
+    sources: [
+      { name: `Handelsblatt`, url: `https://www.handelsblatt.com/politik/international/iran-krieg-hamsterkaeufe-in-teheran-lange-schlangen-an-tankstellen/100250385.html` },
+    ],
+    body: `In der iranischen Hauptstadt Teheran warten plötzlich Autofahrer auch um 2.00 Uhr nachts auf Benzin. Die Regierung weist die Sorgen zurück.
+
+Quelle: Handelsblatt.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-28-chinesische-nickelfirmen-in-indonesien-erwagen-produktionsku`,
     date: `2026-08-28`,
     tag: `Marktbeobachtung`,
