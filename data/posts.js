@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-28-die-ukraine-gibt-an-eine-groe-russische-olraffinerie-in-jaro`,
+    date: `2026-08-28`,
+    tag: `Marktbeobachtung`,
+    title: `Die Ukraine gibt an, eine große russische Ölraffinerie in Jaroslawl angegriffen zu haben`,
+    excerpt: `Die Ukraine sagte, sie habe die Ölraffinerie in Jaroslawl, eine der größten Treibstoffproduktionsanlagen Russlands, getroffen.`,
+    assets: [],
+    sources: [
+      { name: `Bloomberg`, url: `https://www.bloomberg.com/news/articles/2026-08-28/ukraine-says-it-attacked-major-russian-oil-refinery-in-yaroslavl` },
+    ],
+    body: `Die Ukraine sagte, sie habe die Ölraffinerie in Jaroslawl, eine der größten Treibstoffproduktionsanlagen Russlands, getroffen. Dies sei der jüngste Teil einer Flut von Angriffen, die eine neue Welle von Benzinknappheit im ganzen Land ausgelöst habe.
+
+Quelle: Bloomberg.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-28-lage-am-arbeitsmarkt-zahl-der-arbeitslosen-steigt-im-august`,
     date: `2026-08-28`,
     tag: `Marktbeobachtung`,
