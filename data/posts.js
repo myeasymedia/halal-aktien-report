@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-28-toyota-verkaufe-und-produktion-gehen-aufgrund-starker-ruckga`,
+    date: `2026-08-28`,
+    tag: `Marktbeobachtung`,
+    title: `Toyota-Verkäufe und -Produktion gehen aufgrund starker Rückgänge in China und im Nahen Osten zurück`,
+    excerpt: ``,
+    assets: [],
+    sources: [
+      { name: `Reuters`, url: `https://news.google.com/rss/articles/CBMixgFBVV95cUxPMEtxSHAxUUVBZTFKQk0xVnpjUDlpUFBUR3dFcEdIT1RCYTVGWkp3WUNTeno4TjlVdno1VWN2UmhURmJ1TGJVT1NNcmpwVGxpcDMzTFY2WkRHRlJnajh4RS1FTEt4SDdCZnV4dmphX2ZFTlBFRnluWkhTR3E2UkZ5TUJhdkJXaU9WdVdxdE5pREVvU2JDXzlxWV9RUWM0WjRsMk9YWWZUNzdoMFkxTHNoWWdFMFJJVk1iNUljZHNScVpJWS1LcGc?oc=5` },
+    ],
+    body: `
+
+Quelle: Reuters.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-28-better-fuhrt-von-coinbase-unterstutzte-bitcoin-hypotheken-ei`,
     date: `2026-08-28`,
     tag: `Marktbeobachtung`,
