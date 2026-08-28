@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-28-goldminenunternehmen-haben-einen-besseren-monat-als-chips-se`,
+    date: `2026-08-28`,
+    tag: `Marktbeobachtung`,
+    title: `Goldminenunternehmen haben einen besseren Monat als Chips seit Jahren`,
+    excerpt: `Goldminenaktien sind im Aufwind und ihr Anstieg im August übertrifft alles, was Chipaktien seit Jahren geschafft haben.`,
+    assets: [],
+    sources: [
+      { name: `Bloomberg`, url: `https://www.bloomberg.com/news/articles/2026-08-28/gold-miners-are-having-a-better-month-than-chips-did-in-years` },
+    ],
+    body: `Goldminenaktien sind im Aufwind und ihr Anstieg im August übertrifft alles, was Chipaktien seit Jahren geschafft haben.
+
+Quelle: Bloomberg.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-28-gold-halt-sich-in-der-nahe-von-4-600-us-dollar-da-sich-die-a`,
     date: `2026-08-28`,
     tag: `Marktbeobachtung`,
