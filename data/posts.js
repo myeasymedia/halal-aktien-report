@@ -12,6 +12,23 @@
 
 const POSTS = [
   {
+    slug: `2026-08-28-lage-am-arbeitsmarkt-zahl-der-arbeitslosen-steigt-im-august`,
+    date: `2026-08-28`,
+    tag: `Marktbeobachtung`,
+    title: `Lage am Arbeitsmarkt: Zahl der Arbeitslosen steigt im August auf 3,061 Millionen`,
+    excerpt: `Die Zahl der ⁠Arbeitslosen in Deutschland ist im August ‌noch weiter über die Marke von ‌drei Millionen ‌gestiegen. Die Arbeitslosenquote legte auf 6,5 Prozent zu.`,
+    assets: [],
+    sources: [
+      { name: `FAZ`, url: `https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/keine-besserung-in-sicht-zahl-der-arbeitslosen-steigt-im-august-auf-3-061-millionen-accg-201167458.html` },
+      { name: `Handelsblatt`, url: `https://www.handelsblatt.com/politik/deutschland/arbeitsmarkt-zahl-der-arbeitslosen-bleibt-bei-ueber-drei-millionen/100250344.html` },
+    ],
+    body: `Die Zahl der ⁠Arbeitslosen in Deutschland ist im August ‌noch weiter über die Marke von ‌drei Millionen ‌gestiegen. Die Arbeitslosenquote legte auf 6,5 Prozent zu.
+
+Quellen: FAZ, Handelsblatt.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-28-toyota-verkaufe-und-produktion-gehen-aufgrund-starker-ruckga`,
     date: `2026-08-28`,
     tag: `Marktbeobachtung`,
