@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-28-gold-halt-sich-in-der-nahe-von-4-600-us-dollar-da-sich-die-a`,
+    date: `2026-08-28`,
+    tag: `Marktbeobachtung`,
+    title: `Gold hält sich in der Nähe von 4.600 US-Dollar, da sich die Anleger auf den Zinserhöhungspfad der Fed konzentrieren`,
+    excerpt: `Der Goldpreis stabilisierte sich in der Nähe von 4.600 USD pro Unze, da die Anleger vor einer wichtigen Rede des Vorsitzenden der US-Notenbank, Kevin Warsh, die Aussichten für die US-Zinsen abwägten.`,
+    assets: [],
+    sources: [
+      { name: `Bloomberg`, url: `https://www.bloomberg.com/news/articles/2026-08-27/gold-holds-near-4-600-as-investors-focus-on-fed-rate-hike-path` },
+    ],
+    body: `Der Goldpreis stabilisierte sich in der Nähe von 4.600 USD pro Unze, da die Anleger vor einer wichtigen Rede des Vorsitzenden der US-Notenbank, Kevin Warsh, die Aussichten für die US-Zinsen abwägten.
+
+Quelle: Bloomberg.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-27-nvidia-fugt-442-milliarden-us-dollar-im-zweitgroten-aktienan`,
     date: `2026-08-27`,
     tag: `Marktbeobachtung`,
