@@ -1831,3 +1831,8 @@ html.reveal-ready .reveal.in { opacity: 1; transform: none; }
   .at-linie { height: 96px; }
   .at-schloss-btn { width: 100%; }
 }
+
+/* Preisabschnitt: Entscheidungshilfe und Beruhigung */
+.stufen-hilfe { margin-top: 14px; font-size: 1.02rem; opacity: .92; }
+.stufen-hilfe em { font-style: normal; color: var(--accent, #5fe0a8); }
+.tier-fuss { margin: 12px 0 0; font-size: .82rem; opacity: .58; text-align: center; }
