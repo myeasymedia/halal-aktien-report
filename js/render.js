@@ -17,7 +17,9 @@
    ------------------------------------------------------------ */
 const LINKS = {
   free: "https://t.me/barakahfinance_free",
-  pro:  "https://t.me/+m2aCaMO95jc5NWQy",
+  // Ueber den BOT, nicht direkt in die Gruppe -- sonst kommt jeder
+  // Besucher ohne Zahlung hinein.
+  pro:  "https://t.me/DerFinanzOnkel_Bot?start=beitreten",
   vip:  "https://t.me/DerFinanzOnkel_Bot?start=beitreten",
 };
 
