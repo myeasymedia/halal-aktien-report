@@ -107,15 +107,39 @@ const ANALYSE_TEASER = {
     79669.0938
   ],
   "anlass": "Notenbank & Zinsen",
-  "wirkungsweg": "Wenn Zinsen steigen, wird Risiko unattraktiver und Bitcoin gibt oft nach. Sinken sie, fließt erfahrungsgemäß wieder Geld hinein.",
-  "zehntausend": {
-    "ende": 7079,
-    "von": "2025-08-28",
-    "bis": "2026-08-28"
-  },
+  "wirkungswege": [
+    {
+      "anlass": "Notenbank & Zinsen",
+      "szenario": "Wenn Zinsen steigen, wird Risiko unattraktiver und Bitcoin gibt oft nach. Sinken sie, fließt erfahrungsgemäß wieder Geld hinein."
+    },
+    {
+      "anlass": "Währungskrise",
+      "szenario": "Wenn der Kapitalverkehr eingeschränkt wird, weichen Menschen auf Krypto aus, weil es niemand aufhalten kann. In früheren Währungskrisen stieg die Nachfrage deutlich."
+    }
+  ],
+  "termine": [
+    {
+      "wann": "11.09.",
+      "zeit": "14:30 Uhr",
+      "titel": "US-Inflationsdaten für August",
+      "icon": "📊"
+    },
+    {
+      "wann": "15.09.",
+      "zeit": "",
+      "titel": "CLARITY Act: Abstimmung im US-Senat",
+      "icon": "🪙"
+    },
+    {
+      "wann": "16.09.",
+      "zeit": "20:00 Uhr",
+      "titel": "Fed-Zinsentscheid + Projektionen",
+      "icon": "🏛"
+    }
+  ],
   "verborgen": {
-    "wirkungswege": 2,
-    "termine": 3,
+    "wirkungswege": 1,
+    "termine": 0,
     "kennzahlen": 0,
     "bewegungen": 3,
     "weitere_werte": 12

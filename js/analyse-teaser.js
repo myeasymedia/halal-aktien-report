@@ -76,24 +76,31 @@
       }).join("") + "</div>";
   }
 
-  // Der ueberzeugendste Block: ein Betrag statt einer Prozentzahl.
-  function zehntausend() {
-    var z = d.zehntausend;
-    if (!z || !z.ende) return "";
-    var runter = z.ende < 10000;
-    return '<div class="at-zehnk">' +
-      '<div class="at-zehnk-zeile">' +
-        '<span class="at-zehnk-von">10.000 €</span>' +
-        '<span class="at-zehnk-pfeil">→</span>' +
-        '<span class="at-zehnk-nach ' + (runter ? "down" : "up") + '">' +
-          zahl(z.ende, 0) + " €</span>" +
-      "</div>" +
-      '<p class="at-zehnk-hinweis">wären daraus in einem Jahr geworden' +
-      (runter
-        ? ". <strong>Auch das zeigen wir</strong> — wir rechnen vor, was war, " +
-          "nicht was sein könnte."
-        : ". Rückblickend gerechnet, ohne Gebühren und Steuern.") +
-      "</p></div>";
+  // Zwei vollstaendige Wirkungswege. Erst an der ZWEITEN Erklaerung
+  // sieht man, dass hinter einem Wert mehrere Kraefte wirken -- und
+  // genau das soll der Besucher denken: "so sieht eine Analyse aus".
+  function wirkungswege() {
+    var wege = d.wirkungswege || [];
+    if (!wege.length) return "";
+    return '<div class="at-weg"><h4>Was diesen Wert typischerweise bewegt</h4>' +
+      wege.map(function (w) {
+        return '<div class="at-weg-eintrag">' +
+          '<span class="at-anlass">' + w.anlass + "</span>" +
+          "<p>" + w.szenario + "</p></div>";
+      }).join("") + "</div>";
+  }
+
+  // Echte, datierte Termine -- der Beweis, dass die Analyse nach vorn
+  // schaut und nicht nur Kurse nacherzaehlt.
+  function termine() {
+    var t = d.termine || [];
+    if (!t.length) return "";
+    return '<div class="at-termine"><h4>Was in den nächsten Wochen ansteht</h4><ul>' +
+      t.map(function (x) {
+        return "<li><span class=\"at-t-icon\">" + (x.icon || "") + "</span>" +
+          '<span class="at-t-wann">' + x.wann + (x.zeit ? ", " + x.zeit : "") +
+          '</span><span class="at-t-titel">' + x.titel + "</span></li>";
+      }).join("") + "</ul></div>";
   }
 
   var v = d.verborgen || {};
@@ -117,12 +124,8 @@
       "</div>" +
       kacheln() +
       linie(d.verlauf) +
-      (d.wirkungsweg
-        ? '<div class="at-weg"><h4>Was diesen Wert typischerweise bewegt</h4>' +
-          '<span class="at-anlass">' + (d.anlass || "") + "</span>" +
-          "<p>" + d.wirkungsweg + "</p></div>"
-        : "") +
-      zehntausend() +
+      wirkungswege() +
+      termine() +
       '<div class="at-schloss">' +
         '<div class="at-schloss-inner">' +
           '<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">' +
