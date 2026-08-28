@@ -1,0 +1,51 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="http://localhost:4173/css/fonts.css">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1200px;height:630px;background:#070d0c;color:#f4f1e8;
+       font-family:Inter,system-ui,sans-serif;overflow:hidden;position:relative}
+  body::before{content:'';position:absolute;inset:0;
+    background:radial-gradient(70% 80% at 12% -10%,rgba(15,76,70,.75),transparent 62%),
+               radial-gradient(60% 70% at 96% 8%,rgba(46,230,168,.16),transparent 60%),
+               radial-gradient(60% 60% at 55% 120%,rgba(212,169,95,.10),transparent 60%)}
+  .wrap{position:relative;padding:74px 80px;height:100%;display:flex;flex-direction:column}
+  .top{display:flex;align-items:center;gap:16px}
+  .mark{width:60px;height:60px;border-radius:18px;display:grid;place-items:center;
+        background:linear-gradient(140deg,#2ee6a8,#0f4c46);color:#070d0c;
+        font-family:Fraunces,Georgia,serif;font-size:32px;font-weight:600}
+  .name{font-size:26px;font-weight:700;letter-spacing:-.02em}
+  h1{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:76px;line-height:1.04;
+     letter-spacing:-.03em;margin-top:auto}
+  .grad{background:linear-gradient(100deg,#2ee6a8 10%,#d4a95f 92%);
+        -webkit-background-clip:text;background-clip:text;color:transparent}
+  p{margin-top:26px;font-size:25px;line-height:1.45;color:#93a9a0;max-width:24ch}
+  .chips{display:flex;gap:12px;margin-top:auto;padding-top:36px}
+  .chip{padding:11px 22px;border-radius:999px;border:1px solid rgba(244,241,232,.16);
+        font-size:19px;color:#93a9a0;background:rgba(255,255,255,.04)}
+  .chip.on{border-color:rgba(46,230,168,.45);color:#2ee6a8}
+  .moon{position:absolute;right:-40px;top:50%;transform:translateY(-50%);
+        width:420px;height:420px;opacity:.92}
+</style></head><body>
+<div class="wrap">
+  <div class="top"><div class="mark">B</div><div class="name">Barakah Finance</div></div>
+  <h1>Halal investieren,<br><span class="grad">endlich verständlich.</span></h1>
+  <p>Täglich geprüfte Marktnachrichten zu Aktien, Gold und Bitcoin.</p>
+  <div class="chips">
+    <span class="chip on">35 Quellen</span>
+    <span class="chip">2-Quellen-Prüfung</span>
+    <span class="chip">Halal-Screen</span>
+    <span class="chip">Keine Anlageberatung</span>
+  </div>
+</div>
+<svg class="moon" viewBox="0 0 200 200">
+  <defs><linearGradient id="m" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#5ff0c0"/><stop offset="100%" stop-color="#0f4c46"/>
+  </linearGradient></defs>
+  <path d="M140 20a80 80 0 1 0 0 160 92 92 0 0 1 0-160z" fill="url(#m)" opacity=".95"/>
+  <path d="M152 74l7 15 16 2-12 11 3 16-14-8-14 8 3-16-12-11 16-2z" fill="#d4a95f"/>
+  <ellipse cx="100" cy="100" rx="96" ry="34" fill="none" stroke="#2ee6a8" stroke-width="1.2"
+           opacity=".45" transform="rotate(-18 100 100)"/>
+  <ellipse cx="100" cy="100" rx="88" ry="26" fill="none" stroke="#d4a95f" stroke-width="1"
+           opacity=".3" transform="rotate(24 100 100)"/>
+</svg>
+</body></html>

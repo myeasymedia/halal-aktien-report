@@ -441,4 +441,34 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://joyful-dasik-cdf792.netlify.app/pages/wissen/ist-bitcoin-halal.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joyful-dasik-cdf792.netlify.app/pages/wissen/was-ist-riba.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joyful-dasik-cdf792.netlify.app/pages/wissen/sind-etfs-halal.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joyful-dasik-cdf792.netlify.app/pages/wissen/halal-aktien-finden.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joyful-dasik-cdf792.netlify.app/pages/recht/impressum.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://joyful-dasik-cdf792.netlify.app/pages/recht/datenschutz.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>
