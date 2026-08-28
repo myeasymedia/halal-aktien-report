@@ -12,6 +12,23 @@
 
 const POSTS = [
   {
+    slug: `2026-08-28-better-fuhrt-von-coinbase-unterstutzte-bitcoin-hypotheken-ei`,
+    date: `2026-08-28`,
+    tag: `Marktbeobachtung`,
+    title: `Better führt von Coinbase unterstützte Bitcoin-Hypotheken ein`,
+    excerpt: `Better und Coinbase haben ein kryptogestütztes Hypothekenprodukt auf den Markt gebracht, das es US-amerikanischen Hauskäufern ermöglicht, Bitcoin als Sicherheit für eine Anzahlung zu verpfänden, ohne es verkaufen zu müssen.`,
+    assets: [],
+    sources: [
+      { name: `Cointelegraph`, url: `https://cointelegraph.com/news/better-launches-bitcoin-backed-mortgages-powered-by-coinbase?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound` },
+      { name: `Yahoo Finance`, url: `https://finance.yahoo.com/markets/crypto/articles/better-opens-crypto-backed-mortgages-175700139.html` },
+    ],
+    body: `Better und Coinbase haben ein kryptogestütztes Hypothekenprodukt auf den Markt gebracht, das es US-amerikanischen Hauskäufern ermöglicht, Bitcoin als Sicherheit für eine Anzahlung zu verpfänden, ohne es verkaufen zu müssen.
+
+Quellen: Cointelegraph, Yahoo Finance.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-28-goldminenunternehmen-haben-einen-besseren-monat-als-chips-se`,
     date: `2026-08-28`,
     tag: `Marktbeobachtung`,
