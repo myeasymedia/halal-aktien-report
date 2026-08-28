@@ -18,7 +18,7 @@
 const LINKS = {
   free: "https://t.me/barakahfinance_free",
   pro:  "https://t.me/+m2aCaMO95jc5NWQy",
-  vip:  "https://t.me/+EwK47soi2l5lZWMy",
+  vip:  "https://t.me/DerFinanzOnkel_Bot?start=beitreten",
 };
 
 /* Kleiner Helfer: schützt vor Sonderzeichen aus den Daten.

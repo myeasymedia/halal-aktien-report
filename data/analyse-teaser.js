@@ -109,5 +109,5 @@ const ANALYSE_TEASER = {
     "bewegungen": 3,
     "weitere_werte": 12
   },
-  "cta": "https://t.me/+EwK47soi2l5lZWMy"
+  "cta": "https://t.me/DerFinanzOnkel_Bot?start=beitreten"
 };
