@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-29-wall-street-endet-tiefer-nach-fed-chair-warsh-bestatigt-infl`,
+    date: `2026-08-29`,
+    tag: `Update`,
+    title: `Wall Street endet tiefer nach Fed Chair Warsh bestätigt Inflationskampf`,
+    excerpt: ``,
+    assets: [],
+    sources: [
+      { name: `Reuters`, url: `https://news.google.com/rss/articles/CBMirwFBVV95cUxPYzh4MV92bkEtZUxKUlZLdW5KN2RKeGVEa2xtekxiVnhNbF9RMWxGVGRCZkZJOWEwQkhaVEhBV2hpb3A2S000Vjd0VklkeTdqRFJGeXpYTFdwb19mclEtbEtneVB0M3VlWE84Q0tGeVdhcUM4QU90a2Rmb1pfR3ljSFNWaDVWbGhFT3lLMzQtQnl2VmR5S2lsVUF1RWQyN2diQWdwaHlqUGRwV3lyUkZJ?oc=5` },
+    ],
+    body: `
+
+Quelle: Reuters.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-29-nach-angaben-des-militars-totet-israel-einen-hamas-aktiviste`,
     date: `2026-08-29`,
     tag: `Breaking`,
