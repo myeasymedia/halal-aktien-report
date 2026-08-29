@@ -12,6 +12,23 @@
 
 const POSTS = [
   {
+    slug: `2026-08-29-krieg-gegen-die-ukraine-viele-tote-bei-luftangriff-im-raum-k`,
+    date: `2026-08-29`,
+    tag: `Breaking`,
+    title: `Krieg gegen die Ukraine: Viele Tote bei Luftangriff im Raum Kiew`,
+    excerpt: `Im russischen Krieg gegen die Ukraine halten die Luftangriffe auf beiden Seiten unvermindert an: Russland attackierte erneut den Großraum Kiew. Mindestens 37 Menschen starben.`,
+    assets: [],
+    sources: [
+      { name: `Tagesschau (ARD)`, url: `https://www.tagesschau.de/ausland/europa/ukraine-tote-butscha-odessa-kiew-100.html` },
+      { name: `ZDFheute`, url: `https://www.zdfheute.de/politik/ausland/ukraine-krieg-russland-kiew-angriff-tote-verletzte-100.html` },
+    ],
+    body: `Im russischen Krieg gegen die Ukraine halten die Luftangriffe auf beiden Seiten unvermindert an: Russland attackierte erneut den Großraum Kiew. Mindestens 37 Menschen starben.
+
+Quellen: Tagesschau (ARD), ZDFheute.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-29-wall-street-endet-tiefer-nach-fed-chair-warsh-bestatigt-infl`,
     date: `2026-08-29`,
     tag: `Update`,
