@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-29-nach-angaben-des-militars-totet-israel-einen-hamas-aktiviste`,
+    date: `2026-08-29`,
+    tag: `Breaking`,
+    title: `Nach Angaben des Militärs tötet Israel einen Hamas-Aktivisten bei einem seltenen Luftangriff im Westjordanland`,
+    excerpt: ``,
+    assets: [],
+    sources: [
+      { name: `Reuters`, url: `https://news.google.com/rss/articles/CBMiygFBVV95cUxQZlZhNVQwZ2dBSUdMTmN3b2ZuR1VlSlBOanV6NTVkNTBsdHdfZk1OYW95SVFnU0dIdDNlS0NGSkxwOWFCd05JQ28za2N3azJRM2p0UXlISHl3aERWa3VubVRlVGdSdjF3UFFyUlc3VW5yVmI5b3ItU3ZsY1l6TFYtVWxJUG50X2RiNHZ3bGNPMnVRemphRGd2dlJtYUEycGQwUFdxaWdZd056a2d4QldPVEZULVFFUGJQLW05bVFwSWlMLWF0YzVZWmRn?oc=5` },
+    ],
+    body: `
+
+Quelle: Reuters.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-28-wall-st-week-ahead-jobs-bericht-broadcom-ergebnisse-stellen`,
     date: `2026-08-28`,
     tag: `Marktbeobachtung`,
