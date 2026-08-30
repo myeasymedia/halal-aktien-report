@@ -12,6 +12,23 @@
 
 const POSTS = [
   {
+    slug: `2026-08-30-aus-diesem-grund-ist-warshs-rede-in-jackson-hole-ein-wichtig`,
+    date: `2026-08-30`,
+    tag: `Update`,
+    title: `Aus diesem Grund ist Warshs Rede in Jackson Hole ein wichtiges Ereignis für Bitcoin und Gold`,
+    excerpt: `Warshs aggressive Rede in Jackson Hole lässt den Goldpreis deutlich sinken.`,
+    assets: [],
+    sources: [
+      { name: `CoinDesk`, url: `https://www.coindesk.com/markets/2026/08/28/here-s-why-warsh-s-jackson-hole-speech-is-a-major-event-for-bitcoin-and-gold` },
+      { name: `Yahoo Finance`, url: `https://finance.yahoo.com/markets/commodities/articles/warshs-hawkish-jackson-hole-speech-191300915.html` },
+    ],
+    body: `Warshs aggressive Rede in Jackson Hole lässt den Goldpreis deutlich sinken.
+
+Quellen: CoinDesk, Yahoo Finance.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-29-krieg-gegen-die-ukraine-viele-tote-bei-luftangriff-im-raum-k`,
     date: `2026-08-29`,
     tag: `Breaking`,
