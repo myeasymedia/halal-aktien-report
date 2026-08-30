@@ -16,6 +16,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://joyful-dasik-cdf792.netlify.app/pages/wissen/halal-aktien-finden.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joyful-dasik-cdf792.netlify.app/pages/wissen/ist-bitcoin-halal.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joyful-dasik-cdf792.netlify.app/pages/wissen/sind-etfs-halal.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joyful-dasik-cdf792.netlify.app/pages/wissen/was-ist-riba.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://joyful-dasik-cdf792.netlify.app/pages/blog-post.html?slug=2026-08-30-debasement-trade-um-bitcoin-in-drei-jahren-auf-300-000-zu-ne</loc>
     <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -476,5 +496,25 @@
     <loc>https://joyful-dasik-cdf792.netlify.app/pages/unternehmen-detail.html?ticker=SBUX</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://joyful-dasik-cdf792.netlify.app/pages/recht/agb.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://joyful-dasik-cdf792.netlify.app/pages/recht/datenschutz.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://joyful-dasik-cdf792.netlify.app/pages/recht/impressum.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://joyful-dasik-cdf792.netlify.app/pages/recht/widerruf.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

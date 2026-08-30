@@ -22,6 +22,29 @@ const staticUrls = [
   { loc: "/pages/unternehmen.html", changefreq: "weekly", priority: "0.8" },
 ];
 
+/* Feste Seiten aus dem Dateisystem einlesen statt sie hier zu pflegen.
+   Vorher standen Wissens-Artikel und Rechtsseiten ueberhaupt nicht in
+   der Sitemap: Der Bot erzeugt sie bei jedem neuen Beitrag neu, und
+   dabei fielen alle Seiten heraus, die hier nicht aufgezaehlt waren.
+   Aus dem Verzeichnis gelesen kann das nicht mehr passieren -- eine
+   neue Seite ist automatisch dabei. */
+function seitenAus(unterordner, changefreq, priority) {
+  const ordner = path.join(__dirname, "..", "pages", unterordner);
+  if (!fs.existsSync(ordner)) return [];
+  return fs
+    .readdirSync(ordner)
+    .filter((d) => d.endsWith(".html"))
+    .sort()
+    .map((d) => ({
+      loc: `/pages/${unterordner}/${d}`,
+      changefreq,
+      priority,
+    }));
+}
+
+const wissenUrls = seitenAus("wissen", "monthly", "0.7");
+const rechtUrls = seitenAus("recht", "yearly", "0.3");
+
 const postUrls = POSTS.map((p) => ({
   loc: `/pages/blog-post.html?slug=${p.slug}`,
   lastmod: p.date,
@@ -35,7 +58,7 @@ const companyUrls = COMPANIES.map((c) => ({
   priority: "0.6",
 }));
 
-const allUrls = [...staticUrls, ...postUrls, ...companyUrls];
+const allUrls = [...staticUrls, ...wissenUrls, ...postUrls, ...companyUrls, ...rechtUrls];
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -52,4 +75,8 @@ ${allUrls
 `;
 
 fs.writeFileSync(path.join(__dirname, "..", "sitemap.xml"), xml);
-console.log(`sitemap.xml geschrieben mit ${allUrls.length} URLs.`);
+console.log(
+  `sitemap.xml geschrieben mit ${allUrls.length} URLs ` +
+    `(${wissenUrls.length} Wissen, ${postUrls.length} Beiträge, ` +
+    `${companyUrls.length} Unternehmen, ${rechtUrls.length} Rechtliches).`
+);
