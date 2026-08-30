@@ -12,6 +12,22 @@
 
 const POSTS = [
   {
+    slug: `2026-08-30-debasement-trade-um-bitcoin-in-drei-jahren-auf-300-000-zu-ne`,
+    date: `2026-08-30`,
+    tag: `Marktbeobachtung`,
+    title: `Debasement Trade, um Bitcoin in drei Jahren auf $300.000 zu nehmen, sagt Bernstein`,
+    excerpt: `Bitcoin konnte so arrangieren, wie der Debasement-Handel wieder in den Fokus kommt, so Bernstein. Das könnte auch die Aktien der Strategie stärken.`,
+    assets: [],
+    sources: [
+      { name: `CNBC Investing`, url: `https://www.cnbc.com/2026/08/26/debasement-trade-to-take-bitcoin-to-300000-in-2029-bernstein-says-.html` },
+    ],
+    body: `Bitcoin konnte so arrangieren, wie der Debasement-Handel wieder in den Fokus kommt, so Bernstein. Das könnte auch die Aktien der Strategie stärken.
+
+Quelle: CNBC Investing.
+
+Automatisierte, KI-gestützte Zusammenfassung aus mehrfach bestätigter Berichterstattung. Keine Kauf- oder Anlageempfehlung.`,
+  },
+  {
     slug: `2026-08-30-aus-diesem-grund-ist-warshs-rede-in-jackson-hole-ein-wichtig`,
     date: `2026-08-30`,
     tag: `Update`,
