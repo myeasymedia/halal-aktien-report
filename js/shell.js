@@ -69,7 +69,9 @@
         '<p class="footer-note"><strong>Keine Anlageberatung.</strong> Alle Inhalte sind Marktbeobachtung und Erklärung — keine Kauf- oder Verkaufsempfehlung, keine Kursziele, keine Renditeversprechen. Der Halal-Screen ist eine Heuristik und ersetzt kein zertifiziertes Sharia-Gutachten. © ' +
         new Date().getFullYear() + ' Barakah Finance. <span class="footer-recht">' +
         '<a href="' + hoch + 'pages/recht/impressum.html">Impressum</a> · ' +
-        '<a href="' + hoch + 'pages/recht/datenschutz.html">Datenschutz</a></span></p>' +
+        '<a href="' + hoch + 'pages/recht/datenschutz.html">Datenschutz</a> · ' +
+        '<a href="' + hoch + 'pages/recht/agb.html">AGB</a> · ' +
+        '<a href="' + hoch + 'pages/recht/widerruf.html">Widerruf</a></span></p>' +
       "</div>";
   }
 })();
